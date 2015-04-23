@@ -14,5 +14,5 @@ The errors reported by PyLint will appear in the Error List window. Double-click
 ![PyLint Error List](Images/PyLintErrorList.png)
 
 test 2
-[[Images/PylintErrorList.png]]
+[[images/pylinterrorlist.png]]
 
