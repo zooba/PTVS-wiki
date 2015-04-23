@@ -2,4 +2,4 @@ Welcome to the PTVS wiki!
 
 [[Pylint|Pylint]] 
 
-[[Images/PylintErrorList.png]]
+[[blob/master/Images/PylintErrorList.png]]
