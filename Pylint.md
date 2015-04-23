@@ -11,8 +11,8 @@ If you don't have PyLint installed, it will prompt you to install it into your a
 
 The errors reported by PyLint will appear in the Error List window. Double-click on an error and it will take you to the source code.
 
-![PyLint Error List](blob/master/Images/PyLintErrorList.png)
+![PyLint Error List](Images/PyLintErrorList.png)
 
 test 2
-[[Images/PylintErrorList.png]]
+[[blob/master/Images/PylintErrorList.png]]
 
