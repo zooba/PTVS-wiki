@@ -5,7 +5,7 @@ For [PTVS 2.1](https://pytools.codeplex.com/releases/view/109707), we have added
 
 In Solution Explorer, you'll see a command to run PyLint on your Python project node.
 
-![PyLint Command](Images/PyLintCommand.png)
+[[Images/PyLintCommand.png]]
 
 If you don't have PyLint installed, it will prompt you to install it into your active Python environment.
 
