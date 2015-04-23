@@ -55,7 +55,7 @@ Features in Depth
 
 * [Azure SDK for Python](AzureSDK)
 
-* [MPI, IPython, and Cluster Support](HPC-and-Cloud-Features]
+* [MPI, IPython, and Cluster Support](HPC-and-Cloud-Features)
 
 * [Kinect for Python](PyKinect)
 
