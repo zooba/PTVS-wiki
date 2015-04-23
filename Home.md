@@ -3,8 +3,8 @@ Python Tools for Visual Studio Documentation
 
 Getting Started
 ---------------
- * [wiki:"Installation Instructions" PTVS-Installation]
- * [wiki:"Feature Matrix" Features-Matrix]
+ * [Installation Instructions](PTVS-Installation)
+ * [Feature Matrix](Features-Matrix)
 
 Features in Depth
 -----------------
@@ -23,7 +23,7 @@ Features in Depth
 * [Interactive REPL](Interactive-REPL)
  * [Switching Scopes](Interactive-REPL#switching-scopes)
  * [Send Code to Interactive](Interactive-REPL#sending-code-to-interactive)
- * [wiki:Using IPython with PTVS]
+ * [Using IPython with PTVS](Using-IPython-with-PTVS)
 
 * [Debugging](Debugging)
  * [Basic Debugging](Debugging#basic-debugging)
@@ -34,7 +34,7 @@ Features in Depth
  * [Remote Debugging for Microsoft Azure Web Sites](Azure-Remote-Debugging)
  * [Python/C++ Mixed-Mode Debugging](Mixed-Mode-Debugging)
 
-* [wiki:"Profiling" Features Profiling]
+* [Profiling](Profiling)
 
 * [Projects](Projects)
   * [Project Types](Projects#project-types)
@@ -49,21 +49,21 @@ Features in Depth
   * [Python Environments](Python-Environments)
   * [Managing Requirements](Python-Environments#managing-required-packages)
 
-* [wiki:"Unit Tests" Unit Tests]
+* [Unit Tests](Unit-Tests)
 
 * [PyLint](PyLint)
 
 * [Azure SDK for Python](AzureSDK)
 
-* [wiki:"MPI, IPython, and Cluster Support" Detailed Walk-thu Guide - HPC and Cloud Features]
+* [MPI, IPython, and Cluster Support](HPC-and-Cloud-Features]
 
 * [Kinect for Python](PyKinect)
 
-* [wiki:"Pyvot - an Excel to Python bridge" Pyvot]
+* [Pyvot - an Excel to Python bridge](Pyvot)
 
-* [wiki:"NumPy/SciPy for IronPython Quick Start (project deprecated)" NumPy and SciPy for .Net]
+* [NumPy/SciPy for IronPython Quick Start (project deprecated)](NumPy-and-SciPy-for-Net)
 
-* [wiki:"wfastcgi" wfastcgi]
+* [wfastcgi](wfastcgi)
 
 * Tutorials
  * [Bottle and Azure Table Storage on Azure](Bottle-and-Azure-Table-Storage-on-Azure)
