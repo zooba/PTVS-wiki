@@ -13,8 +13,7 @@ Mixed-mode debugging is only supported on Visual Studio 2012 and above.
 
 Most regular Python debuggers, including PTVS before version 2.0, only support debugging of Python code. In practice, however, Python is often used in conjunction with C or C++ where high performance or the ability to directly invoke platform APIs is required. Python Tools for Visual Studio 2.0 adds the ability for integrated debugging experience for such scenarios, where Python and native (C/C++) code is debugged simultaneously in a single Visual Studio debugging session, with combined call stacks, the ability to step between Python and native code, breakpoints in either type of code, and the ability to see Python representations of objects in native frames and vice versa:
 
-![Mixed-mode debugging](Images/MixedModeDebuggingScreenshot.png)
-
+![Mixed-mode debugging](Images/MixedModeDebuggingScreenshot.png) 
 
 ## Differences from pure Python debugging
 
@@ -23,7 +22,7 @@ The mixed-mode debugger in PTVS 2.0 is a new debug engine that is radically diff
 
 ### Supported Python versions
 
-The pure Python debugger supports most Python interpreters that provide the standard Python debugging API – CPython, PyPy, IronPython, Jython etc. Mixed-mode debugging, in contrast, requires intimate understanding of interpreter internals, and so it is only supported for CPython 2.7 and 3.3+. Additionally, mixed-mode debugging requires debug symbols for that particular Python interpreter binary (python27.dll or python33.dll) to be available, and so it is not available for third-party CPython distributions that do not provide symbols for their binaries. [wiki:"This page" Symbols for Python mixed-mode debugging] explains the requirements for debug symbols in more detail, as well as how to obtain them.
+The pure Python debugger supports most Python interpreters that provide the standard Python debugging API – CPython, PyPy, IronPython, Jython etc. Mixed-mode debugging, in contrast, requires intimate understanding of interpreter internals, and so it is only supported for CPython 2.7 and 3.3+. Additionally, mixed-mode debugging requires debug symbols for that particular Python interpreter binary (python27.dll or python33.dll) to be available, and so it is not available for third-party CPython distributions that do not provide symbols for their binaries. [This page](Symbols-for-Python-mixed-mode-debugging) explains the requirements for debug symbols in more detail, as well as how to obtain them.
 
 
 ### Supported Visual Studio versions
