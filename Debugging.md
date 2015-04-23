@@ -139,7 +139,7 @@ The standard launcher uses debugging code written in portable Python code that i
 
 The IronPython launcher uses the .NET debugger, which only works with IronPython but allows for stepping between any .NET language project, including C# and VB. If you attach to a running .NET process that is hosting IronPython, this mode is used.
 
-The MPI Cluster launcher is for remotely debugging Python processes. See the [wiki:"HPC and Cloud Features" Detailed Walk-thu Guide - HPC and Cloud Features] overview for more information.
+The MPI Cluster launcher is for remotely debugging Python processes. See the [HPC and Cloud Features](HPC-and-Cloud-Features) overview for more information.
 
 The Django launcher starts your default browser on launch and enables debugging of templates. See the [Python Developer Center](https://www.windowsazure.com/en-us/develop/python/) on [windowsazure.com](http://windowsazure.com) for more information.
 

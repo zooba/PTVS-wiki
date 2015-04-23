@@ -13,7 +13,7 @@ The interactive window supports executing files or the start file of your projec
 
 ![Execute Project in Python Interactive menu](Images/ExecuteProjectInPythonInteractive.png)
 
-As well as the built-in Interactive window, you can choose to use IPython if you have it installed. IPython is an advanced yet user-friendly interactive development environment that's cross-platform and has Interactive Parallel Computing features (discussed elsewhere). See [wiki:Using IPython with PTVS] for more information.
+As well as the built-in Interactive window, you can choose to use IPython if you have it installed. IPython is an advanced yet user-friendly interactive development environment that's cross-platform and has Interactive Parallel Computing features (discussed elsewhere). See [Using IPython with PTVS](Using-IPython-with-PTVS) for more information.
 
 Switching Scopes
 ----------------
