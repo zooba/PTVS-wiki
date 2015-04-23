@@ -17,7 +17,7 @@ The errors reported by PyLint will appear in the Error List window. Double-click
 The following link should render the image from the wiki repository, but it doesn't work:
 [[Images/PylintErrorList.png]]
 
-[Here is an example][https://github.com/mikehadlow/WikiDemo/wiki/Main-Page] of a wiki repo that does the same thing (link to an image in its wiki repo) and where it works.
+Here's an example [https://github.com/mikehadlow/WikiDemo/wiki/Main-Page] of a wiki repo that does the same thing (link to an image in its wiki repo) and where it works.
 
 
 
