@@ -12,5 +12,6 @@ If you don't have PyLint installed, it will prompt you to install it into your a
 The errors reported by PyLint will appear in the Error List window. Double-click on an error and it will take you to the source code.
 
 ![PyLint Error List](https://github.com/Microsoft/PTVS/blob/master/Python/Docs/User/Images/PylintErrorList.png)
-![PyLint Error List](https://github.com/Microsoft/PTVS/wiki/blob/master/Images/PylintErrorList.png)
+
+![External Image Test](https://github.com/mikehadlow/WikiDemo/wiki/images/logo_design.png)
 
