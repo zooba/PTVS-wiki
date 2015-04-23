@@ -92,7 +92,7 @@ When you start debugging in mixed mode for the first time, you will likely see t
 
 ![Python Symbols Required](Images/MixedModeDebuggingSymbolsRequired.png)
 
-The detailed steps to obtain the symbols for your interpreter and register it with Visual Studio are available on [wiki:"This page" Symbols for Python mixed-mode debugging] (the “Download symbols” link in the dialog will open it as well). This only has to be done once for every Python interpreter version that you will be using.
+The detailed steps to obtain the symbols for your interpreter and register it with Visual Studio are available on [This page](Symbols-for-Python-mixed-mode-debugging) (the “Download symbols” link in the dialog will open it as well). This only has to be done once for every Python interpreter version that you will be using.
 
 
 ## Mixed-mode specific features
