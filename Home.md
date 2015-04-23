@@ -12,7 +12,7 @@ Features in Depth
 * [Editing](Editor-Features)
  * [Intellisense](Editor-Features#intellisense)
  * [Navigation](Editor-Features#navigation)
- * [wiki:Code Formatting]
+ * [Code Formatting](Code-Formatting)
 
 * [Refactoring](Refactoring)
  * [Rename](Refactoring#rename-variable)
@@ -81,4 +81,4 @@ See the downloads page for each release to read the release notes.
 Other Pages
 -----------
  * [Where is PTVS installed?](Where-is-PTVS-installed)
- * [wiki:Build Instructions for PTVS]
+ * [Build Instructions for PTVS](Build-Instructions-for-PTVS)
