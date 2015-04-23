@@ -27,7 +27,7 @@ The pure Python debugger supports most Python interpreters that provide the stan
 
 ### Supported Visual Studio versions
 
-Mixed-mode debugging is supported on all editions of Visual Studio 2012 and 2013 on which PTVS can be installed. It is *not* supported on VS 2010.
+Mixed-mode debugging is supported on all editions of Visual Studio 2012, 2013 and 2015 on which PTVS can be installed. It is *not* supported on VS 2010.
 
 When using PTVS with Visual Studio Shell (for example, if you installed it using the integrated installer), Visual Studio is unable to open C++ projects, and editing experience for C++ files is that of a basic text editor - no syntax highlighting nor code completion is available. However, C/C++ debugging, as well as Python mixed-mode debugging, is still fully supported in Shell, and will show the source code, provide stepping in native code, and provide full-fledged C++ expression evaluation in debugger windows.
 
