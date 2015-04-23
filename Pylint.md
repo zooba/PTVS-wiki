@@ -13,4 +13,11 @@ The errors reported by PyLint will appear in the Error List window. Double-click
 
 ![PyLint Error List](https://github.com/Microsoft/PTVS/blob/master/Python/Docs/User/Images/PylintErrorList.png)
 
-![[Images/PylintErrorList.png]]
+
+The following link should render the image from the wiki repository, but it doesn't work:
+[[Images/PylintErrorList.png]]
+
+[Here is an example][https://github.com/mikehadlow/WikiDemo/wiki/Main-Page] of a wiki repo that does the same thing (link to an image in its wiki repo) and where it works.
+
+
+
