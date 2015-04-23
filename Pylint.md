@@ -7,7 +7,7 @@ In Solution Explorer, you'll see a command to run PyLint on your Python project 
 
 ![PyLint Command](https://raw.githubusercontent.com/Microsoft/PTVS/841eab161949862e498b7d4603d7dcae059db635/Python/Docs/User/Images/PylintCommand.png)
 
-![PyLint Command](https://raw.githubusercontent.com/Microsoft/PTVS/Python/Docs/User/Images/PylintCommand.png)
+![in repo](https://github.com/github/Microsoft/PTVS/blob/master/Python/Docs/User/Images/PylintCommand.png)
 
 If you don't have PyLint installed, it will prompt you to install it into your active Python environment.
 
