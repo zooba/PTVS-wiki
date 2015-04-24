@@ -30,7 +30,7 @@ Features in Depth
  * [Debugging with a Project](Debugging#debugging-with-a-project)
  * [Debugging without a Project](Debugging#debugging-without-a-project)
  * [The Debug Interactive Window](Debugging#the-debug-interactive-window)
- * [Remote Debugging for Windows, Linux and OS X](Remote-Debugging)
+ * [Remote Debugging for Windows, Linux and OS X](Cross-Platform-Remote-Debugging)
  * [Remote Debugging for Microsoft Azure Web Sites](Azure-Remote-Debugging)
  * [Python/C++ Mixed-Mode Debugging](Mixed-Mode-Debugging)
 
