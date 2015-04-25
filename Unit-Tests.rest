@@ -9,10 +9,10 @@ Discovering Tests
 
 PTVS will discover tests using the standard unittest package. To ensure your test can be found and run, follow these rules:
 
-* * Import unittest
-* * Derive a class from unittest.TestCase
-* * Define a method named "test<name of your test>"
-* * (Optional) Add a call to unittest.main()
+* Import unittest
+* Derive a class from unittest.TestCase
+* Define a method named "test<name of your test>"
+* (Optional) Add a call to unittest.main()
     
     * This will allow you to run your script directly to execute the tests
 
