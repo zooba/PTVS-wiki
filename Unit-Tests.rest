@@ -1,4 +1,4 @@
-> **Note:** Unit tests are only supported on Visual Studio 2012 Professional and higher. The Visual Studio Shells and any version of Visual Studio 2010 do not detect or run unit tests.
+:: **Note:** Unit tests are only supported on Visual Studio 2012 Professional and higher. The Visual Studio Shells and any version of Visual Studio 2010 do not detect or run unit tests.
 
 Unit tests are short sections of code that test small pieces of functionality belonging to a larger program. By demonstrating that each piece of a program is correct, it is easier to infer that the entire program is correct.
 
