@@ -9,11 +9,12 @@ Discovering Tests
 
 PTVS will discover tests using the standard unittest package. To ensure your test can be found and run, follow these rules:
 
-- Import unittest
-- Derive a class from unittest.TestCase
-- Define a method named "test<name of your test>"
-- (Optional) Add a call to unittest.main() 
-    - This will allow you to run your script directly to execute the tests
+* * Import unittest
+* * Derive a class from unittest.TestCase
+* * Define a method named "test<name of your test>"
+* * (Optional) Add a call to unittest.main()
+    
+    * This will allow you to run your script directly to execute the tests
 
 Blank tests that follow these rules can be added by selecting Project, Add New Item (Ctrl+Shift+A) and choosing "Python Unit Test".
 
@@ -34,10 +35,9 @@ This will add a new file containing a basic unit test.
 
 Hit Save All (Ctrl+Shift+S) to save the project file, and your test will be discovered and displayed in the Test Explorer. (If you do not see the Test Explorer window, click the Test menu, then Windows and Test Explorer.)
 
-.. image:: http://download-codeplex.sec.s-msft.com/Download?ProjectName=pytools&DownloadId=697120
-    :align: right
-
     **Important:** If you do not see your test in the Test Explorer window, check our beta caveats for known issues and workarounds.
+
+.. image:: http://download-codeplex.sec.s-msft.com/Download?ProjectName=pytools&DownloadId=697120
 
 As you add more tests to your project, you may prefer to group or filter the tests that are displayed. The "Group By" menu on the toolbar will allow you to collect your tests into different groups, and the search toolbox will filter by matching names. Double-clicking a test will open the source file containing the test implementation.
 
