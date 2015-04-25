@@ -1,4 +1,4 @@
-:: **Note:** Unit tests are only supported on Visual Studio 2012 Professional and higher. The Visual Studio Shells and any version of Visual Studio 2010 do not detect or run unit tests.
+    **Note:** Unit tests are only supported on Visual Studio 2012 Professional and higher. The Visual Studio Shells and any version of Visual Studio 2010 do not detect or run unit tests.
 
 Unit tests are short sections of code that test small pieces of functionality belonging to a larger program. By demonstrating that each piece of a program is correct, it is easier to infer that the entire program is correct.
 
@@ -37,7 +37,7 @@ Hit Save All (Ctrl+Shift+S) to save the project file, and your test will be disc
 
 .. image:: http://download-codeplex.sec.s-msft.com/Download?ProjectName=pytools&DownloadId=697120
 
-> **Important:** If you do not see your test in the Test Explorer window, check our beta caveats for known issues and workarounds.
+    **Important:** If you do not see your test in the Test Explorer window, check our beta caveats for known issues and workarounds.
 
 As you add more tests to your project, you may prefer to group or filter the tests that are displayed. The "Group By" menu on the toolbar will allow you to collect your tests into different groups, and the search toolbox will filter by matching names. Double-clicking a test will open the source file containing the test implementation.
 
