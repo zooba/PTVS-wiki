@@ -1,1 +1,0 @@
-This page is on our [CodePlex](http://pytools.codeplex.com/wikipage?title=NumPy%20and%20SciPy%20for%20.Net) site.  Feel free to port this to GitHub!
