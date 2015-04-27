@@ -189,4 +189,4 @@ The output directory will contain VS 201x\Debug and VS 201x\Release folders (for
 
 To build PTVS for Visual Studio 2010 or Visual Studio 2012, you should provide the **-vstarget 10.0** or **-vstarget 11.0** options, as these versions are now disabled by default. You are also likely to encounter build errors, and we are no longer testing changes against these versions.
 
-The script provides many more options. Type **powershell -ExecutionPolicy RemoteSigned Get-Help .\BuildRelease.ps1 ** for more information and **powershell -ExecutionPolicy RemoteSigned Get-Help .\BuildRelease.ps1 -examples** for some examples.
+The script provides many more options. Type **powershell -ExecutionPolicy RemoteSigned Get-Help .\BuildRelease.ps1** for more information and **powershell -ExecutionPolicy RemoteSigned Get-Help .\BuildRelease.ps1 -examples** for some examples.
