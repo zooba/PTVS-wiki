@@ -63,8 +63,6 @@ Features in Depth
 
 * [Kinect for Python](PyKinect)
 
-* [Pyvot - an Excel to Python bridge](Pyvot)
-
 * [wfastcgi](wfastcgi)
 
 * Tutorials
