@@ -1,6 +1,6 @@
 ## Overview of PTVS 2.0 features (about 2-4 minutes per area):
 
-<p><a href="https://www.youtube.com/watch?v=JNNAOypc6Ek&hd=1"><img src="Images/Overview.png" width="375" height="230" border="0" style="float:none; padding-top:0px; padding-left:0px; margin-left:auto; display:block; padding-right:0px; margin-right:auto; border:0px"></a></p>
+<p><a href="https://www.youtube.com/watch?v=JNNAOypc6Ek&hd=1"><img src="VideoThumbnails/Overview.png" width="375" height="230" border="0" style="float:none; padding-top:0px; padding-left:0px; margin-left:auto; display:block; padding-right:0px; margin-right:auto; border:0px"></a></p>
 
 
 ### For a quick overview of 2.1 features please watch this [video](http://youtu.be/UrD9aKxvPcY):
@@ -12,16 +12,16 @@
 <tr>
 <td valign="top" width="189">
 <p align="center"><strong>Python Environments &amp; Virtual Env</strong> <br>
-<a href="https://www.youtube.com/watch?v=eKPeC1remt4&hd=1"><img src="Images/Python-Environments-and-VirtualEnv.png" width="187" height="109" border="0" style="padding-top:0px; padding-left:0px; display:inline; padding-right:0px; border-width:0px"></a></p>
+<a href="https://www.youtube.com/watch?v=eKPeC1remt4&hd=1"><img src="VideoThumbnails/Python-Environments-and-VirtualEnv.png" width="187" height="109" border="0" style="padding-top:0px; padding-left:0px; display:inline; padding-right:0px; border-width:0px"></a></p>
 </td>
 <td valign="top" width="193">
 <p align="center"><strong>Mixed Python/C/C&#43;&#43; Debugging</strong> <br>
-<a href="http://www.youtube.com/watch?v=wvJaKQ94lBY"><img src="Images/mixed-mode-debugging.png" width="191" height="111" border="0" style="padding-top:0px; padding-left:0px; display:inline; padding-right:0px; border-width:0px"></a></p>
+<a href="http://www.youtube.com/watch?v=wvJaKQ94lBY"><img src="VideoThumbnails/mixed-mode-debugging.png" width="191" height="111" border="0" style="padding-top:0px; padding-left:0px; display:inline; padding-right:0px; border-width:0px"></a></p>
 </td>
 <td valign="top" width="193">
 <p align="center"><strong>Django <br>
 Web Site</strong> <br>
-<a href="https://www.youtube.com/watch?v=wkqjafvvU5w&hd=1"><img src="Images/DjangoWebsite.png" width="191" height="112" border="0" style="padding-top:0px; padding-left:0px; display:inline; padding-right:0px; border-width:0px"></a></p>
+<a href="https://www.youtube.com/watch?v=wkqjafvvU5w&hd=1"><img src="VideoThumbnails/DjangoWebsite.png" width="191" height="112" border="0" style="padding-top:0px; padding-left:0px; display:inline; padding-right:0px; border-width:0px"></a></p>
 </td>
 </tr>
 </tbody>
@@ -31,15 +31,15 @@ Web Site</strong> <br>
 <tr>
 <td valign="top" width="192">
 <p align="center"><strong>Analysis &amp; IntelliSense</strong> <br>
-<a href="http://www.youtube.com/watch?v=J5GK8uVEoX4"><img src="Images/Analysis-and-Intellisense.png" width="186" height="115" border="0" style="padding-top:0px; padding-left:0px; display:inline; padding-right:0px; border-width:0px"></a></p>
+<a href="http://www.youtube.com/watch?v=J5GK8uVEoX4"><img src="VideoThumbnails/Analysis-and-Intellisense.png" width="186" height="115" border="0" style="padding-top:0px; padding-left:0px; display:inline; padding-right:0px; border-width:0px"></a></p>
 </td>
 <td valign="top" width="191">
 <p align="center"><strong>Remote Debug for Linux/OS X</strong> <br>
-<a href="http://www.youtube.com/watch?v=VTluEosS4Ts"><img src="Cross-Platform-Remote-Debugging.png" width="189" height="117" border="0" style="padding-top:0px; padding-left:0px; display:inline; padding-right:0px; border-width:0px"></a></p>
+<a href="http://www.youtube.com/watch?v=VTluEosS4Ts"><img src="VideoThumbnails/Cross-Platform-Remote-Debugging.png" width="189" height="117" border="0" style="padding-top:0px; padding-left:0px; display:inline; padding-right:0px; border-width:0px"></a></p>
 </td>
 <td valign="top" width="196">
 <p align="center"><strong>Debug As Script</strong> <br>
-<a href="http://www.youtube.com/watch?v=QADxwr0wjU4"><img src="Images/Debug-As-Script.png" width="194" height="118" border="0" style="padding-top:0px; padding-left:0px; display:inline; padding-right:0px; border-width:0px"></a></p>
+<a href="http://www.youtube.com/watch?v=QADxwr0wjU4"><img src="VideoThumbnails/Debug-As-Script.png" width="194" height="118" border="0" style="padding-top:0px; padding-left:0px; display:inline; padding-right:0px; border-width:0px"></a></p>
 </td>
 </tr>
 </tbody>
