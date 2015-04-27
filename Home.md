@@ -5,6 +5,7 @@ Getting Started
 ---------------
  * [Installation Instructions](PTVS-Installation)
  * [Feature Matrix](Features-Matrix)
+ * [Overview Videos](Videos)
 
 Contributing
 ------------
