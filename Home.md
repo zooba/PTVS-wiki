@@ -6,6 +6,11 @@ Getting Started
  * [Installation Instructions](PTVS-Installation)
  * [Feature Matrix](Features-Matrix)
 
+Contributing
+------------
+ * [Contributing to PTVS](Contributing-to-PTVS)
+ * [Build Instructions for PTVS](Build-Instructions-for-PTVS)
+
 Features in Depth
 -----------------
 
@@ -81,4 +86,4 @@ See the downloads page for each release to read the release notes.
 Other Pages
 -----------
  * [Where is PTVS installed?](Where-is-PTVS-installed)
- * [Build Instructions for PTVS](Build-Instructions-for-PTVS)
+
