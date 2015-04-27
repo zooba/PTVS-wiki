@@ -3,14 +3,24 @@ Python Tools for Visual Studio Documentation
 
 Getting Started
 ---------------
- * [Installation Instructions](PTVS-Installation)
- * [Feature Matrix](Features-Matrix)
- * [Overview Videos](Videos)
+* [Installation Instructions](PTVS-Installation)
+* [Feature Matrix](Features-Matrix)
+* [Overview Videos](Videos)
 
 Contributing
 ------------
- * [Contributing to PTVS](Contributing-to-PTVS)
- * [Build Instructions for PTVS](Build-Instructions-for-PTVS)
+* [Contributing to PTVS](Contributing-to-PTVS)
+* [Build Instructions for PTVS](Build-Instructions-for-PTVS)
+
+Tutorials
+---------
+* [Bottle and Azure Table Storage on Azure](Bottle-and-Azure-Table-Storage-on-Azure)
+* [Bottle and MongoDB on Azure](Bottle-and-MongoDB-on-Azure)
+* [Flask and Azure Table Storage on Azure](Flask-and-Azure-Table-Storage-on-Azure)
+* [Flask and MongoDB on Azure](Flask-and-MongoDB-on-Azure)
+* [Django and SQL Database on Azure](Django-and-SQL-Database-on-Azure)
+* [Django and MySQL on Azure](Django-and-MySQL-on-Azure)
+
 
 Features in Depth
 -----------------
@@ -64,14 +74,6 @@ Features in Depth
 * [Kinect for Python](PyKinect)
 
 * [wfastcgi](wfastcgi)
-
-* Tutorials
- * [Bottle and Azure Table Storage on Azure](Bottle-and-Azure-Table-Storage-on-Azure)
- * [Bottle and MongoDB on Azure](Bottle-and-MongoDB-on-Azure)
- * [Flask and Azure Table Storage on Azure](Flask-and-Azure-Table-Storage-on-Azure)
- * [Flask and MongoDB on Azure](Flask-and-MongoDB-on-Azure)
- * [Django and SQL Database on Azure](Django-and-SQL-Database-on-Azure)
- * [Django and MySQL on Azure](Django-and-MySQL-on-Azure)
 
 Release Notes
 -------------
