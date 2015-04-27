@@ -1,6 +1,6 @@
 ## Overview of PTVS 2.0 features (about 2-4 minutes per area):
 
-<p><a href="https://www.youtube.com/watch?v=JNNAOypc6Ek&hd=1"><img title="ptvs.overview.play" src="" alt="ptvs.overview.play" width="375" height="230" border="0" style="float:none; padding-top:0px; padding-left:0px; margin-left:auto; display:block; padding-right:0px; margin-right:auto; border:0px"></a></p>
+<p><a href="https://www.youtube.com/watch?v=JNNAOypc6Ek&hd=1"><img src="Images/Overview.png" width="375" height="230" border="0" style="float:none; padding-top:0px; padding-left:0px; margin-left:auto; display:block; padding-right:0px; margin-right:auto; border:0px"></a></p>
 
 
 ### For a quick overview of 2.1 features please watch this [video](http://youtu.be/UrD9aKxvPcY):
