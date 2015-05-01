@@ -2,7 +2,7 @@ Features Matrix
 ---------------
 
 PTVS can be installed in the following editions of Visual Studio:
-
+* [Visual Studio 2013 Community Edition] (https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx)
 * [Visual Studio 2013 Express for Web](http://www.microsoft.com/en-us/download/details.aspx?id=40747) - Update 2 required.
 * [Visual Studio 2013 Express for Desktop](http://www.microsoft.com/en-us/download/details.aspx?id=40787) - Update 2 required.
 * Visual Studio 2013 Pro or higher
@@ -20,9 +20,13 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Pro&#43;</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Web</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Desktop</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Community</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2015 Community RC</strong></td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Multi interpreters management</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -36,9 +40,13 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Add custom interpreters</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -52,9 +60,13 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Pip/Easy Install</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -68,9 +80,13 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Pro&#43;</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Web</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Desktop</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Community</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2015 Community RC</strong></td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;New project from existing code</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -84,9 +100,13 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Source control</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -100,6 +120,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>Editing</strong></td>
@@ -108,6 +130,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Pro&#43;</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Web</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Desktop</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Community</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2015 Community RC</strong></td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Syntax highlighting</td>
@@ -116,9 +140,13 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Completions</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -132,9 +160,13 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Quick info</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -148,9 +180,13 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Navigation bar</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -164,9 +200,13 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Navigate to</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -180,9 +220,13 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Auto indentation</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -196,9 +240,13 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Refactor - Rename</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -212,9 +260,13 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Refactor - Add/Remove import</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -228,6 +280,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>Interactive Window</strong></td>
@@ -236,9 +290,13 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Pro&#43;</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Web</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Desktop</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Community</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2015 Community RC</strong></td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Interactive Window</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -252,6 +310,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>Desktop</strong></td>
@@ -260,9 +320,13 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Pro&#43;</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Web</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Desktop</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Community</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2015 Community RC</strong></td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Console/Windows application</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -276,9 +340,13 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;IronPython Windows Forms</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -292,6 +360,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Pro&#43;</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Web</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Desktop</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Community</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2015 Community RC</strong></td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Django web project</td>
@@ -300,6 +370,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Bottle web project
@@ -309,6 +381,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Flask web project
@@ -318,6 +392,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Generic web project
@@ -327,6 +403,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>Azure</strong></td>
@@ -335,6 +413,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Pro&#43;</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Web</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Desktop</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Community</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2015 Community RC</strong></td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Web Deploy to Web Site</td>
@@ -343,6 +423,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Web Deploy to Web Role</td>
@@ -351,6 +433,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes <sup>4</sup></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes <sup>4</sup></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Web Deploy to Worker Role
@@ -360,6 +444,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes <sup>4</sup></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes <sup>4</sup></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">?</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">?</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Run in Azure emulator</td>
@@ -368,6 +454,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes <sup>4</sup></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes <sup>4</sup></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">?</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">?</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Web Site Remote debugging
@@ -377,6 +465,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes <sup>8</sup></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes <sup>6</sup></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">?</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">?</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Server Explorer Attach
@@ -386,6 +476,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes <sup>7</sup></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes <sup>7</sup></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">?</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">?</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>Django Templates</strong></td>
@@ -394,6 +486,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Pro&#43;</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Web</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Desktop</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Community</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2015 Community RC</strong></td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Debugging</td>
@@ -402,6 +496,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Completions</td>
@@ -410,6 +506,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes <sup>5</sup></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes <sup>5</sup></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Completions for CSS, JS
@@ -419,6 +517,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes <sup>5</sup></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes <sup>5</sup></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">?</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">?</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>Debugging</strong></td>
@@ -427,9 +527,13 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Pro&#43;</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Web</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Desktop</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Community</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2015 Community RC</strong></td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Debugging</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -443,6 +547,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Debugging - Attach to existing</td>
@@ -451,10 +557,14 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Mixed-Mode debugging</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -467,9 +577,13 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Debug interactive window</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -483,6 +597,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Pro&#43;</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Web</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Desktop</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Community</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2015 Community RC</strong></td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Profiling</td>
@@ -491,6 +607,8 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">?</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">?</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>Test</strong></td>
@@ -499,10 +617,14 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Pro&#43;</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Web</strong></td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Desktop</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2013 Community</strong></td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0"><strong>2015 Community RC</strong></td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Test explorer</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
@@ -515,10 +637,14 @@ Below is a feature matrix for the supported editions of Visual Studio.
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 </tr>
 <tr>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">&nbsp;Debug test</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">no</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
+<td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
 <td style="padding:0.2em 0.5em; border:1px solid #a0a0a0">yes</td>
