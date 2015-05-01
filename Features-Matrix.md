@@ -2,6 +2,8 @@ Features Matrix
 ---------------
 
 PTVS can be installed in the following editions of Visual Studio:
+*[Visual Studio 2015 RC] (https://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs)
+*[Visual Studio 2015 Community Edition RC] https://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs)
 * [Visual Studio 2013 Community Edition] (https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx)
 * [Visual Studio 2013 Express for Web](http://www.microsoft.com/en-us/download/details.aspx?id=40747) - Update 2 required.
 * [Visual Studio 2013 Express for Desktop](http://www.microsoft.com/en-us/download/details.aspx?id=40787) - Update 2 required.
