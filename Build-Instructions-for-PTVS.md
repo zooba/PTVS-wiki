@@ -111,9 +111,9 @@ Be aware that the Windows Azure SDK for Python installer will install the latest
 
 Some other prerequisites are included with the source code:
 
-Our automated tests use a separately installed tool for controlling Visual Studio. These can be installed by running **Prerequisites\VSTestHost.msi** for VS 2013, VS 2012, and VS 2010.
+Our automated tests use a separately installed tool for controlling Visual Studio. These can be installed by running **Common\Prerequisites\VSTestHost.msi** for VS 2013, VS 2012, and VS 2010.
 
-Finally you'll need to disable strong name verification for the Python Tools binaries. This can be done by merging the **Prerequisites\EnableSkipVerification.reg** file (or **Prerequisites\EnableSkipVerificationX86.reg**, depending on your own system).  This will install registry keys which disable strong name verification for the assemblies built by PTVS.  If you also want to use the installer you may need to stop and restart the Windows Installer service (from an elevated command prompt, type **net stop "Windows Installer"** and then **net start "Windows Installer"**).
+Finally you'll need to disable strong name verification for the Python Tools binaries. This can be done by merging the **Python\Prerequisites\EnableSkipVerification.reg** file (or **Prerequisites\EnableSkipVerificationX86.reg**, depending on your own system).  This will install registry keys which disable strong name verification for the assemblies built by PTVS.  If you also want to use the installer you may need to stop and restart the Windows Installer service (from an elevated command prompt, type **net stop "Windows Installer"** and then **net start "Windows Installer"**).
 
 ### Optional Projects
 
@@ -121,13 +121,11 @@ Visual Studio 2010 Professional requires the Standalone Profiler to build the **
 
 The [HPC Pack](http://www.microsoft.com/en-us/download/details.aspx?id=17017) and [SDK](http://www.microsoft.com/en-us/download/details.aspx?id=12218) are required to build the **Hpc** and **MpiShim** projects. You can unload these from the solution if you do not want to install the HPC tools.
 
-The [Kinect SDK](http://www.microsoft.com/en-us/kinectforwindows/develop/overview.aspx) is required to build the **PyKinect** and **PyKinectAudio** projects. These can be unloaded from the solution if you do not want to install the Kinect SDK.
-
 The [Azure SDK](https://www.windowsazure.com/en-us/develop/python/) is required for building the **Django, WebRole, AzureSetup,  DjangoTests, DjangoUITests** and **FastCgiTests** projects. You can unload these if you do not want to install the Azure SDK.
 
 Visual Studio 2012 or 2013 are required to build the **TestAdapter** and **TestAdapterTests** projects. You can unload these on Visual Studio 2010.
 
-The **IronPython, IronPython.Interpreter, IronPythonResolver** and **Pyvot** projects, as well as those already mentioned, can be unloaded to reduce build time if you do not require these features (note that they can be built without requiring IronPython or Excel being installed). When you are not working on tests, you can unload all projects in the "Tests" solution folder to further reduce the build time, though we do expect most contributions to include appropriate unit tests.
+The **IronPython, IronPython.Interpreter, IronPythonResolver** projects, as well as those already mentioned, can be unloaded to reduce build time if you do not require these features (note that they can be built without requiring IronPython or Excel being installed). When you are not working on tests, you can unload all projects in the "Tests" solution folder to further reduce the build time, though we do expect most contributions to include appropriate unit tests.  Unloading **IronPython** will cause tests to not compile so you may wish to compile these components once.
 
 Core projects are always required to be built, and you will receive build errors if you unload one by mistake. These projects are **Analysis, Analyzer, Attacher,  AttacherX86, Debugger, PyDebugAttach,  PyDebugAttachX86, PythonTools** and **ReplWindow**. The **PythonTools.sln** solution file includes a solution platform called “Minimal” that may be selected within Visual Studio to only build these projects. This will give the fastest possible build times, while only providing core functionality. All of the prerequisites above that are marked optional can be omitted when only building core projects.
 
