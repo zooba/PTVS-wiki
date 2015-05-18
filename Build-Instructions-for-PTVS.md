@@ -10,7 +10,7 @@ If you intend to contribute back to PTVS, you will need to [Create a Fork](https
 
 The following list of software is required in order to build PTVS from source. All of these are required for a complete build, though a complete build is not required to be able to contribute. The next section outlines the projects that may be omitted when building PTVS.
 
-Note that you need a version of either Microsoft Visual Studio 2010, 2012, or 2013. You'll need VS 2010 to build PTVS for VS 2010, and VS 2012 to build PTVS for VS 2012, etc. Instructions in this document describe how to build using VS 2012.
+Note that you need a version of either Microsoft Visual Studio 2010, 2012, 2013 or 2015 (starting with PTVS 2.2, only 2013 and 2015 are supported). You'll need VS 2010 to build PTVS for VS 2010, and VS 2012 to build PTVS for VS 2012, etc. Instructions in this document describe how to build using VS 2012.
 
 <table border="1" cellspacing="0" cellpadding="0">
 <tbody>
@@ -103,6 +103,15 @@ http://www.microsoft.com/en-us/download/details.aspx?id=21835</a></p>
 <p><a href="https://www.windowsazure.com/en-us/develop/python/">https://www.windowsazure.com/en-us/develop/python/</a><br>
 (optional)</p>
 </td>
+<tr>
+<td valign="top" width="145">
+<p>Windows Azure SDK for .NET, matching the VS version</p>
+</td>
+<td valign="top" width="481">
+<p><a href="http://azure.microsoft.com/en-us/downloads/archive-net-downloads/">hhttp://azure.microsoft.com/en-us/downloads/archive-net-downloads/</a><br>
+(required for VS 2013 and above)</p>
+</td>
+</tr>
 </tr>
 </tbody>
 </table>
@@ -111,7 +120,7 @@ Be aware that the Windows Azure SDK for Python installer will install the latest
 
 Some other prerequisites are included with the source code:
 
-Our automated tests use a separately installed tool for controlling Visual Studio. These can be installed by running **Common\Prerequisites\VSTestHost.msi** for VS 2013, VS 2012, and VS 2010.
+Our automated tests use a separately installed tool for controlling Visual Studio. These can be installed by running **Common\Prerequisites\VSTestHost.msi** for all supported Visual Studio versions.
 
 Finally you'll need to disable strong name verification for the Python Tools binaries. This can be done by merging the **Python\Prerequisites\EnableSkipVerification.reg** file (or **Prerequisites\EnableSkipVerificationX86.reg**, depending on your own system).  This will install registry keys which disable strong name verification for the assemblies built by PTVS.  If you also want to use the installer you may need to stop and restart the Windows Installer service (from an elevated command prompt, type **net stop "Windows Installer"** and then **net start "Windows Installer"**).
 
@@ -123,11 +132,11 @@ The [HPC Pack](http://www.microsoft.com/en-us/download/details.aspx?id=17017) an
 
 The [Azure SDK](https://www.windowsazure.com/en-us/develop/python/) is required for building the **Django, WebRole, AzureSetup,  DjangoTests, DjangoUITests** and **FastCgiTests** projects. You can unload these if you do not want to install the Azure SDK.
 
-Visual Studio 2012 or 2013 are required to build the **TestAdapter** and **TestAdapterTests** projects. You can unload these on Visual Studio 2010.
+Visual Studio 2012 or higher is required to build the **TestAdapter** and **TestAdapterTests** projects. You can unload these on Visual Studio 2010.
 
 The **IronPython, IronPython.Interpreter, IronPythonResolver** projects, as well as those already mentioned, can be unloaded to reduce build time if you do not require these features (note that they can be built without requiring IronPython or Excel being installed). When you are not working on tests, you can unload all projects in the "Tests" solution folder to further reduce the build time, though we do expect most contributions to include appropriate unit tests.  Unloading **IronPython** will cause tests to not compile so you may wish to compile these components once.
 
-Core projects are always required to be built, and you will receive build errors if you unload one by mistake. These projects are **Analysis, Analyzer, Attacher,  AttacherX86, Debugger, PyDebugAttach,  PyDebugAttachX86, PythonTools** and **ReplWindow**. The **PythonTools.sln** solution file includes a solution platform called “Minimal” that may be selected within Visual Studio to only build these projects. This will give the fastest possible build times, while only providing core functionality. All of the prerequisites above that are marked optional can be omitted when only building core projects.
+Core projects are always required to be built, and you will receive build errors if you unload one by mistake. They are grouped under the "CoreProduct" solution folder. The **PythonTools.sln** solution file includes a solution platform called “Minimal” that may be selected within Visual Studio to only build these projects. This will give the fastest possible build times, while only providing core functionality. All of the prerequisites above that are marked optional can be omitted when only building core projects.
 
 ### Building with MSBuild
 
