@@ -22,7 +22,7 @@ You can now use the handler in a web.config file, here's an example configured f
 
 
     <appSettings>
-        <add key="WSGI_HANDLER" value="django.core.handlers.wsgi.WSGIHandler()" />
+        <add key="WSGI_HANDLER" value="DjangoProject.wsgi.application" />
         <add key="DJANGO_SETTINGS_MODULE" value="DjangoProject.settings" />   
     </appSettings>
     <system.webServer>
@@ -44,7 +44,6 @@ You can now use the handler in a web.config file, here's an example configured f
             </rules>
         </rewrite>
     </system.webServer>
-
 
 You can tweak the URL rewriting to include or exclude certain paths for serving static files or other requests from the same server.
 
