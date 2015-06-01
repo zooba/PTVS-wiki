@@ -16,6 +16,8 @@ A symbol file for a given binary has the same name with .pdb extension. For exam
 If you are using the reference Python interpreter downloaded from the official Python website at http://python.org, then you can download symbols from the same website. To do so, you should open the detailed release page for your Python version, and locate a link described as "Windows x86 MSI program database" (for 32-bit interpreter) or "Windows X86-64 program database" (for 64-bit interpreter). Below are direct download links for all supported versions:
 
 #### Python 2.7
+2.7.10: [32-bit](https://www.python.org/ftp/python/2.7.10/python-2.7.10-pdb.zip) | [64-bit](https://www.python.org/ftp/python/2.7.10/python-2.7.10.amd64-pdb.zip)
+
 2.7.9: [32-bit](https://www.python.org/ftp/python/2.7.9/python-2.7.9-pdb.zip) | [64-bit](https://www.python.org/ftp/python/2.7.9/python-2.7.9.amd64-pdb.zip)
 
 2.7.8: [32-bit](https://www.python.org/ftp/python/2.7.8/python-2.7.8-pdb.zip) | [64-bit](https://www.python.org/ftp/python/2.7.8/python-2.7.8.amd64-pdb.zip)
@@ -48,6 +50,8 @@ If you are using the reference Python interpreter downloaded from the official P
 3.3.0: [32-bit](http://python.org/ftp/python/3.3.0/python-3.3.0-pdb.zip) | [64-bit](http://python.org/ftp/python/3.3.0/python-3.3.0.amd64-pdb.zip)
 
 #### Python 3.4
+3.4.3: [32-bit](https://www.python.org/ftp/python/3.4.3/python-3.4.3-pdb.zip) | [64-bit](https://www.python.org/ftp/python/3.4.3/python-3.4.3.amd64-pdb.zip)
+
 3.4.2: [32-bit](https://www.python.org/ftp/python/3.4.2/python-3.4.2-pdb.zip) | [64-bit](https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64-pdb.zip)
 
 3.4.1: [32-bit](https://www.python.org/ftp/python/3.4.1/python-3.4.1-pdb.zip) | [64-bit](https://www.python.org/ftp/python/3.4.1/python-3.4.1.amd64-pdb.zip)
