@@ -87,7 +87,7 @@ Go to your Python installation directory and start IPython in Pylab mode (**ipyt
 
 Assuming everything is configured properly, you should see something like this:
 
-![1](Images/IPython1.png)
+![IPython Configured](Images/IPython1.png)
 
 #### 2. Now let's make sure PTVS can find all the right bits (IPython, matplotlib, etc):
 * bring up the Python Interpreters window by typing Ctrl-K-` (backtick). Here we see that Python 2.7 64-bit has been selected (<strong>Make Default</strong>):
