@@ -2,7 +2,9 @@
 
 So, you want to contribute to PTVS?  The very first step you'll need to take is [building PTVS for the first time](http://pytools.codeplex.com/wikipage?title=Build%20Instructions%20for%20PTVS). There's instructions on what you'll need to install, how to build, how to run and debug from within Visual Studio, and even how to create the installer which we ship with major releases.
 
-From there you'll need to decide what you want to work on.  You might have an immediate idea of a feature you'd like to work on.  But if not the issue tracker has hundreds of active [features](https://github.com/Microsoft/PTVS/issues) as well as a number of open issues which you could either work on directly or which might inspire you with your own ideas.  
+From there you'll need to decide what you want to work on.  You might have an immediate idea of a feature you'd like to work on.  But if not the issue tracker has hundreds of active [features](https://github.com/Microsoft/PTVS/issues) as well as a number of open issues which you could either work on directly or which might inspire you with your own ideas.
+
+We use the [help wanted](https://github.com/Microsoft/PTVS/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) tag when we spot a feature or issue that could be a good way for someone to get started contributing. No promises that it will be an easy fix, but we'll be able to help point you in the right direction.
 
 In general when the core PTVS team is working on a feature for a future release we'll assign it to that release. Unassigned issues are generally things we're not actively working on.  But if you're not sure, feel free to ask. And if you're planning a particularly large feature you should probably ask before hand.  Either we might have failed to update the issue or we might think you have a completely crazy idea.  Either way, we don't want you to feel like you wasted a bunch of effort.  We currently have more outstanding features than issues so you might want to look at finding a small feature to get started rather than fixing bugs unless you have a particular itch.  
 
