@@ -35,19 +35,33 @@ Global environments can be viewed in the Python Environments window (Ctrl+K, ` -
 [<img src="Images/EnvironmentsWindow.png" width="600" alt="The Python Environments window" />](Images/EnvironmentsWindow.png)
 
 This image shows two environments: Python 2.7 is the current default, which means that all new projects will use it for executing, debugging, checking syntax, displaying import and member completions, and any other tasks that require an environment.
-Changing the default environment will affect all projects that have not had a [project environment](#projectenvironments "Project Environments") added.
+Changing the default environment will affect all projects that have not had a [project environment](#projectenvironments) added.
 
-The other links available in this widow allow you to quickly access the Interactive Window or change options associated with the environment.
-See [Editing](Editor) for a discussion of the Refresh DB command.
+The Overview tab is shown in the above image.
+This displays the location of the interpreter and allows quickly access the Interactive Window or change options associated with the environment.
+
+![pip extension](Images/EnvironmentsWindowPip.png)
+
+The pip tab allows you to manage your installed packages, including updating or uninstalling, and search for and install new ones.
+Searching will filter your currently installed packages as well as searching [PyPI](https://pypi.python.org).
+You can also enter any `pip install` command here, including flags such as `--user` or `--no-deps`.
+
+![IntelliSense extension](Images/EnvironmentsWindowIntelliSense.png)
+
+The IntelliSense tab shows the current completion DB status.
+The completion DB stores precomputed results for your installed packages.
+Packages listed here that are not available may not have any code suggestions when used in the editor.
 
 New environments are typically discovered automatically when you install them onto your machine.
 However, for one reason or another, not every environment can be found.
 To add a global environment manually, you can open Environment Options from anywhere in the Python Environments window (or through Tools, Options, Python Tools) and click 'Add Environment'.
 
-[<img src="Images/OptionsDialog.png" width="600" alt="Adding an environment through environment options" />](Images/OptionsDialog.png)
+![Configuration extension](Images/EnvironmentsWindowConfiguration.png)
+TODO REMOVE: [<img src="Images/OptionsDialog.png" width="600" alt="Adding an environment through environment options" />](Images/OptionsDialog.png)
 
 This image shows typical values for Python distributions based on CPython 2.7.
 Once added, this environment will behave just like one that was automatically detected.
+To remove the environment, click the "Remove" link on the configuration tab.
 
 For those with only one Python environment, there is little need to continue reading, especially if it already includes a large number of useful packages.
 However, for those who are writing Python code to be run in multiple environments or have a need for certain, specific packages, global environments are unlikely to be satisfactory.
@@ -73,7 +87,7 @@ This will display a list of the known environments and let you select or deselec
 Once an environment is displayed in Solution Explorer, it can be expanded to display the installed packages.
 These packages are not part of the Python standard library but can be imported and used in your code when the environment is active.
 
-New packages can be installed by right-clicking the environment entry ('Python 2.7' in the image below) and selecting 'Install Python Package'.
+As well as using the Python Environments window, new packages can be installed by right-clicking the environment entry ('Python 2.7' in the image below) and selecting 'Install Python Package'.
 Packages are downloaded from the Python Package Index (PyPI) by specifying the name of the package - visit [https://pypi.python.org/pypi](https://pypi.python.org/pypi) to search available packages.
 Once installed, a package can be uninstalled by right-clicking it and selecting 'Remove'.
 Success or failure is shown in the status bar and the output window, along with the full output from the package manager used to do the installation.
@@ -89,7 +103,7 @@ Packages installed with these tools from the command-line will also be displayed
 One common situation where pip will fail to install a package is when the package include source code for native components (`*.pyd` files).
 Without the required version of Visual Studio installed (typically VS 2008 for Python versions earlier than 3.3), pip will not be able to compile these components.
 The error message displayed in this situation is `error: Unable to find vcvarsall.bat.`
-easy_install is often able to download pre-compiled binaries.
+`easy_install` is often able to download pre-compiled binaries, and you can download a suitable compiler for older versions of Python from [http://aka.ms/VCPython27](http://aka.ms/VCPython27).
 
 ![Installed Python packages](Images/InstalledPackages.png)
 
@@ -112,7 +126,7 @@ To create a virtual environment, right-click the Python Environments item in Sol
 Specify a name to create the virtual environment in your project path, or a full path to create it elsewhere.
 Environment names should be letters and numbers only to ensure maximum compatibility with other tools.
 Select a global environment to act as the base interpreter (you cannot use another virtual environment for this), and click 'Create'.
-If pip or the virtualenv package are not available, they will be downloaded and installed.
+If `pip` and `virtualenv` or `venv` packages are not available, they will be downloaded and installed.
 
 If the provided path is an existing virtual environment, the base interpreter will be detected and the create button will change to 'Add':
 
@@ -122,6 +136,7 @@ Alternatively, an existing virtual environment can be added by right-clicking th
 We will detect the base interpreter automatically from the orig-prefix.txt file in the environment's lib directory.
 
 Once a virtual environment is added to your project, it can be activated like any other environment, and packages can be installed or uninstalled.
+It will appear in the Python Environments window.
 Right-clicking it and selecting 'Remove' will allow you to either remove the reference to the environment, or delete the environment and all the files on disk.
 
 Managing Required Packages
@@ -163,7 +178,7 @@ This is the easiest way to recreate an environment on another machine.
 
 If a package cannot be installed by pip and it appears in a requirements.txt file, this will cause the entire installation to fail.
 In this case, you can manually edit the file to exclude this package or to use [pip's options](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) to refer to an installable version of the package.
-For example, you may prefer to use [pip wheel](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) to compile a dependency and add the `--find-links=<path>` option to your requirements.txt:
+For example, you may prefer to use [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) to compile a dependency and add the `--find-links <path>` option to your requirements.txt:
 
 ```
 C:\Project>pip wheel azure

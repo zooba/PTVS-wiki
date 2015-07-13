@@ -13,7 +13,9 @@ A symbol file for a given binary has the same name with .pdb extension. For exam
 
 ### Official distribution
 
-If you are using the reference Python interpreter downloaded from the official Python website at http://python.org, then you can download symbols from the same website. To do so, you should open the detailed release page for your Python version, and locate a link described as "Windows x86 MSI program database" (for 32-bit interpreter) or "Windows X86-64 program database" (for 64-bit interpreter). Below are direct download links for all supported versions:
+If you are using the reference Python interpreter downloaded from the official Python website at http://python.org, then you can download symbols from the same website. To do so, you should open the detailed release page for your Python version, and locate a link described as "Windows x86 MSI program database" (for 32-bit interpreter) or "Windows X86-64 program database" (for 64-bit interpreter). Below are direct download links for all supported versions.
+
+Apart from Python 3.5, all of these downloads are in the form of a .zip file containing the requisite .pdb files. After downloading it, unpack it to any directory, and follow the instructions below on registering them with Visual Studio.
 
 #### Python 2.7
 2.7.10: [32-bit](https://www.python.org/ftp/python/2.7.10/python-2.7.10-pdb.zip) | [64-bit](https://www.python.org/ftp/python/2.7.10/python-2.7.10.amd64-pdb.zip)
@@ -58,8 +60,10 @@ If you are using the reference Python interpreter downloaded from the official P
 
 3.4.0: [32-bit](https://www.python.org/ftp/python/3.4.0/python-3.4.0-pdb.zip) | [64-bit](https://www.python.org/ftp/python/3.4.0/python-3.4.0.amd64-pdb.zip)
 
+#### Python 3.5
+When installing, select "Custom" and check the box to install debugging symbols. You will not need to register the symbol directory later on.
 
-All of these downloads are in the form of a .zip file containing the requisite .pdb files. After downloading it, unpack it to any directory, and follow the instructions below on registering them with Visual Studio.
+If you've already installed Python 3.5, open Programs and Features, find the Python 3.5 entry, and modify the installation to add the debugging symbols.
 
 ### WinPython
 

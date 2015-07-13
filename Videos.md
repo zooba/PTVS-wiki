@@ -1,3 +1,57 @@
+<!--
+To be updated when this video is published
+
+# What is PTVS
+
+[![Python Tools for Visual Studio](TODO)](TODO)
+
+A three minute introduction to Python, Visual Studio, and how to get it.
+-->
+
+# Getting Started with PTVS
+
+This short series of six 3-5 minute videos covers the main features of Python Tools for Visual Studio.
+
+[![Video 1: Installing](https://i.ytimg.com/vi/_okUV47eM5c/hqdefault.jpg)](https://youtu.be/_okUV47eM5c?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
+
+[![Video 2: Projects](https://i.ytimg.com/vi/KHPoVpL7zHg/default.jpg)](https://youtu.be/KHPoVpL7zHg?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) [![Video 3: Editing](https://i.ytimg.com/vi/uZGZNEyyeKs/default.jpg)](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) [![Video 4: Debugging](https://i.ytimg.com/vi/bO7wpzgy74A/default.jpg)](https://youtu.be/bO7wpzgy74A?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) [![Video 5: Interactive](https://i.ytimg.com/vi/yc2CROtTsC0/default.jpg)](https://youtu.be/yc2CROtTsC0?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) [![Video 6: Web sites](https://i.ytimg.com/vi/FJx5mutt1uk/default.jpg)](https://youtu.be/FJx5mutt1uk?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
+
+# PTVS Deep Dives
+
+## Source Control
+
+[![Deep Dive: Source Control](https://i.ytimg.com/vi/Aq8eqApnugM/hqdefault.jpg)](https://youtu.be/Aq8eqApnugM)
+
+See how to use git and TFS version control with Python projects in Visual Studio.
+
+## Python Interpreters
+
+[![Deep Dive: Python Interpreters](https://i.ytimg.com/vi/KY1GEOo3qy0/hqdefault.jpg)](https://youtu.be/KY1GEOo3qy0)
+
+See how to use and manage multiple [Python environments](python-environments) and packages with Visual Studio.
+
+## Cross-Platform Remote Debugging
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+[![Deep Dive: Cross-Platform Remote Debugging](https://i.ytimg.com/vi/y1Qq7BrV6Cc/hqdefault.jpg)](https://youtu.be/y1Qq7BrV6Cc)
+
+See how to configure and use Python [cross-platform remote debugging](Cross-Platform-Remote-Debugging) from Visual Studio.
+
+## Creating Native Modules
+
+[![Deep Dive: Creating Native Modules](https://i.ytimg.com/vi/D9RlT06a1EI/hqdefault.jpg)](https://youtu.be/D9RlT06a1EI)
+
+See how to create, test and debug native Python extension modules with Visual Studio.
+
+## Creating a Django Website
+
+[![Deep Dive: Creating a Django Website](https://i.ytimg.com/vi/WG3pGmoo8nE/hqdefault.jpg)](https://youtu.be/WG3pGmoo8nE)
+
+See how to create and test a Django website with Visual Studio, and then deploy it to Microsoft Azure.
+
+
+# Video Archive
+
 ## Overview of PTVS 2.0 features (about 2-4 minutes per area):
 
 <p><a href="https://www.youtube.com/watch?v=JNNAOypc6Ek&hd=1"><img src="VideoThumbnails/Overview.png" width="375" height="230" border="0" style="float:none; padding-top:0px; padding-left:0px; margin-left:auto; display:block; padding-right:0px; margin-right:auto; border:0px"></a></p>

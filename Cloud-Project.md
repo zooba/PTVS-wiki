@@ -33,10 +33,9 @@ Create
 To start creating your project, select the Azure Cloud Service template from the New Project dialog.
 If you have not installed the Azure SDK Tools for Visual Studio, you will be prompted to install them now.
 
-
-In the next dialog that appears, you may select one or more roles to include.
+In the next dialog, you may select one or more roles to include.
 Cloud projects may combine roles written in different languages, so you can easily write each part of your application in the most suitable language.
-To add new roles to the project after completing this dialog, you can right click 'Roles' in Solution Explorer and select one of the items under 'Add'.
+To add new roles to the project after completing this dialog, you can right click "Roles" in Solution Explorer and select one of the items under "Add".
 
 **Important:**
 After adding a new role to your Cloud project, you may be presented with some more configuration instructions.
@@ -45,18 +44,15 @@ The instructions and troubleshooting tips are available in the readme.mht file i
 
 
 <div style="float: right">
-
 <div style="margin: 1em"><img src="Images/AzureCloudProject.png" alt="Azure Cloud Project template" /></div>
-
 <div style="float: right"><a href="Images/AzureCloudProjectWizard.png"><img src="Images/AzureCloudProjectWizard.png" width="400px" alt="Azure Cloud Project wizard" /></a></div>
-
 </div>
 
 In your role projects, you will see a `bin` directory containing one or two PowerShell scripts.
 These are used to configure the remote machine, including installing Python, any [WebPI references](#webpi-references) or [requirements.txt](#requirementstxt) file in your project, and setting up IIS if necessary.
 These files may be freely edited to customize your deployment, though most common options can be managed in other ways (see [Configure](#configure) below).
 We do not suggest removing these files, as a legacy configuration script will be used instead if they are not available.
-To add these files to an existing project, add the Web Role Support Files or Worker Role Support Files item under Add New Item.
+These items can be found as "Web Role Support Files" or "Worker Role Support Files" under Add New Item, if you need to add them to an existing project.
 
 ![Worker Role Support Files](Images/WorkerRoleSupportFiles.png)
 
@@ -95,11 +91,11 @@ Deploy
 ======
 
 A project can be deployed to a Microsoft Azure Cloud Service by selecting the Cloud project, then selecting Publish from the Build menu.
-You can also right-click the project and select Publish.
-(Note that the Publish menu on a Python project is not the same sort of publish.)
+You can also right-click the cloud project and select Publish.
+(Note that the Publish menu on any individual project will not publish the entire cloud service, and may not be able to update the selected project in an existing cloud service.)
 
 Publishing occurs in two phases.
-The first is packaging, which runs on your development machine and produces a single package containing all the roles for your Cloud Service.
+The first is packaging, which runs on your development machine and produces a single package containing all the roles for your cloud service.
 This package is deployed to Microsoft Azure, which will initialize one or more virtual machines for each role and deploy the source.
 
 As each virtual machine activates, it will execute the `ConfigureCloudService.ps1` script and install any dependencies.

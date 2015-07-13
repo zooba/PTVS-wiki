@@ -38,12 +38,6 @@ See the [Django](Django) documentation for more details on Django specific featu
 These projects are web servers using various frameworks.
 See the [Web Projects](Web-Project) documentation for more details.
 
-### Python MPI Application
-
-(Only available when the HPC components are installed - see our [installation](PTVS-Installation) page for the required dependencies).
-
-This project provides a basic outline and deployment settings for an MPI application to run in a cluster.
-
 ### IronPython Application
 
 Similar to the Python application, this project is a good starting point for projects using IronPython and interacting with .NET code.
@@ -69,6 +63,11 @@ Windows Forms applications use an older windowing framework, where controls are 
 PTVS does not include a designer for Windows Forms applications, and so all UI must be written in Python.
 By default, this project will use a 32-bit IronPython interpreter, mixed-mode IronPython/managed debugging, and run without displaying a console (`ipyw.exe`).
 
+### IoT Background Service
+
+Windows IoT supports deploying Python projects to run as background services on devices.
+Visit the [IoT Dev Center](https://dev.windows.com/en-us/iot) for more information.
+
 <p id="ProjectFree" />
 Lightweight Usage Project-free
 ------------------------------
@@ -79,8 +78,7 @@ There are, however, some important caveats that only apply when not using a proj
 
 * All files and packages in the same directory will be analyzed; if there are a lot of files, this may consume a lot of CPU
 * Without a project, you will always use the global default environment; you may see incorrect completions or errors if the files are meant for a different version of Python.
-* To run the file, you must right-click in the editor and select "Start with Debugging" or "Start without Debugging" (the F5 keyboard shortcuts are disabled).
-This will use your global default environment; in a project you can select the environment to use.
+* To run the file, you must right-click in the editor and select "Start with Debugging" or "Start without Debugging" (the F5 keyboard shortcuts are disabled). This will use your global default environment; in a project you can select the environment to use.
 
 To quickly create a project from a directory of existing code, see [Create Project from Existing Files](#create-project-from-existing-files).
 
@@ -106,27 +104,26 @@ On the final page, you can select the location to save the project file.
 Choosing another location does not move or copy the original source files, so if you want a copy you should make one before starting the wizard.
 
 Other options here include auto-detection of virtual environments and project customizations.
-These customizations can only be done when the project is first created and, currently, will enable publishing and debugging features specific to web projects.
+These customizations can only be done when the project is first created and, currently, will enable publishing and debugging features specific to web projects or IoT projects.
 
 ![New Project from Existing Code Wizard step three](Images/FromExisting4.png)
 
 Click Finish and your project will be created.
-If you want to move the .pyproj file somewhere else at this point, select it in Solution Explorer and choose 'File->Save As'.
-Moving the .pyproj this way will update the file references, so we don't have to copy any code files around, but edits, deletes, and renames will affect the original files.
+If you want to move the .pyproj file somewhere else at this point, select it in Solution Explorer and choose File -> Save As.
+Moving the .pyproj this way will update file references and won't move any code files around, but edits, deletes, and renames will affect the original files.
 
 Linked Files
 ------------
 
-
 Linked files appear in Solution Explorer as normal files with a shortcut icon overlayed on top of them.
-Linked files can exist either at the top-level of the project or embedded within an arbitrary folder structure.
+They can exist either at the top-level of the project or embedded within an arbitrary folder structure.
 
 ![Linked file icon](Images/LinkedFileIcon.png)
 
-Linked files are specified in the .pyproj file using the normal `<Compile Include="...">` tag.
+Linked files are specified in the .pyproj file using the normal `<Compile Include="...">` element.
 They can be implicit linked files if they use a relative path outside of the directory structure or they can be explicit link files by specifying their path within Solution Explorer:
 
-```
+```xml
 <Compile Include="..\test2.py">
     <Link>X\test2.py</Link>
 </Compile>
@@ -141,7 +138,7 @@ Linked files specified in a project file will be ignored under the following con
 
 ### Working with Linked Files
 
-To add an existing item as a link, use the Project->Add Existing Item menu (or the context menu), select a file, and choose "Add as Link" from the drop down on the Add button.
+To add an existing item as a link, use the Project -> Add Existing Item command (or the context menu), select a file, and choose "Add as Link" from the drop down on the Add button.
 As long as there are no conflicting files, this will create a link in the folder selected in Solution Explorer.
 If there is already a file with the same name, or if a link to the file is already in the project, the link will not be added.
 
@@ -167,10 +164,8 @@ The equivalent behavior can be obtained in PTVS using Search Paths.
 These are project-specific, and will be passed as the value of `PYTHONPATH` (or equivalent) when you debug or execute your script from Visual Studio.
 Further, by adding the path to Search Paths, PTVS will inspect the available code and provide editor completions.
 
-
 To add a search path, right-click on the Search Paths item in Solution Explorer and select "Add Folder to Search Path...".
 Select the folder to include and you are done.
-
 
 Files with a `.zip` or `.egg` extension can also be added as search paths by selecting "Add Zip Archive to Search Path...".
 As with folders, the contents of these files will be scanned and made available in the editor.

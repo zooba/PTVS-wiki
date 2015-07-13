@@ -73,7 +73,7 @@ Features in Depth
 
 * [Kinect for Python](PyKinect)
 
-* [wfastcgi](wfastcgi)
+* [wfastcgi](https://pypi.python.org/pypi/wfastcgi) (on PyPI)
 
 Release Notes
 -------------
