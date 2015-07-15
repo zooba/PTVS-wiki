@@ -44,7 +44,7 @@ Core projects are always required to be built, and you will receive build errors
 PTVS can be built from the Visual Studio Command Prompt by typing
 
 ```
-msbuild PythonTools.sln
+msbuild Python\PythonTools.sln
 ```
 
 in your cloned directory. This will not install PTVS into the VS Experimental hive, create an installer or affect your main VS installation. Building should complete with zero warnings or errors.
@@ -54,7 +54,7 @@ in your cloned directory. This will not install PTVS into the VS Experimental hi
 To build using the Release configuration, which produces optimized code, type:
 
 ```
-msbuild PythonTools.sln /p:Configuration=Release
+msbuild Python\PythonTools.sln /p:Configuration=Release
 ```
 
 in the cloned directory. As above, this does not create an .msi file or install PTVS into the VS Experimental hive.
@@ -64,7 +64,7 @@ in the cloned directory. As above, this does not create an .msi file or install 
 To build and deploy to the Experimental hive from the command line, add the following properties:
 
 ```
-msbuild PythonTools.sln /p:DeployExtension=true /p:RegisterOutputPackage=true
+msbuild Python\PythonTools.sln /p:DeployExtension=true /p:RegisterOutputPackage=true
 ```
 
 The VS Experimental hive can be started from the Start menu or by typing

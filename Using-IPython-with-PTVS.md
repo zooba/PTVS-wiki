@@ -51,7 +51,7 @@ Look at the 'pip' panel and ensure you can see `IPython` and `matplotlib` listed
 ```python
 >>> x = linspace(0, 5, 10)
 >>> y = x ** 2
->>> plot(x, y, 'r')
+>>> plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
 ```
 
 You should see a graph like this inline:

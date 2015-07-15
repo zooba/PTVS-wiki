@@ -57,7 +57,6 @@ However, for one reason or another, not every environment can be found.
 To add a global environment manually, you can open Environment Options from anywhere in the Python Environments window (or through Tools, Options, Python Tools) and click 'Add Environment'.
 
 ![Configuration extension](Images/EnvironmentsWindowConfiguration.png)
-TODO REMOVE: [<img src="Images/OptionsDialog.png" width="600" alt="Adding an environment through environment options" />](Images/OptionsDialog.png)
 
 This image shows typical values for Python distributions based on CPython 2.7.
 Once added, this environment will behave just like one that was automatically detected.

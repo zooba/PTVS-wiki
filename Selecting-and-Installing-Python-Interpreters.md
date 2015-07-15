@@ -30,7 +30,7 @@ If you've already installed VS and PTVS, we recommend the [IronPython 2.7.5](htt
 
 **PyPy** – this is a high performance tracing JIT implementation of Python: [www.pypy.org](http://www.pypy.org/).
 
-**Jython** – Like IronPython, this is an implementation of Python on the JVM: [www.jython.org.](http://www.jython.org/)
+**Jython** – Like IronPython, this is an implementation of Python on the JVM: [www.jython.org](http://www.jython.org/).
 
 Both PyPy and Jython can be used with PTVS (edit, IntelliSense, etc.) but various advanced debugging features may not work.
 
@@ -41,7 +41,7 @@ Both PyPy and Jython can be used with PTVS (edit, IntelliSense, etc.) but variou
 
 Alright, let's fix that! Normally PTVS can locate an installed Interpreter by checking the registry, but if it's installed in a non-standard fashion, you can directly tell PTVS about it:
 
-### 1. Open the Python Environments window (View -> Other Windows -> Python Environments) and click "Add Environment":
+### 1. Open the Python Environments window (View -> Other Windows -> Python Environments) and click "+ Custom...":
 
 ![Add Python Environment](Images/AddPythonEnvironment.png)
 
@@ -49,9 +49,15 @@ Alright, let's fix that! Normally PTVS can locate an installed Interpreter by ch
 
 ![Add Python Environment](Images/AddPythonEnvironment2.png)
 
-Here we've entered "C:\Python27_x64" as the **prefix path**. Clicking "Auto-detect" will attempt to fill in the remaining information. **Path** is the path to the interpreter executable, commonly the prefix path followed by `python.exe`, while **Windows Path** is the path to the non-console executable, often `pythonw.exe`. **Library Path** specifies the root of the standard library, but this value may be ignored if PTVS is able to request a more accurate path from the interpreter. **Architecture** is normally detected and filled in for you, and **language version** can be selected from the drop down menu.
+Here we've entered `D:\pypy-2.5.0-win32` as the **prefix path**.
+**Path** is the path to the interpreter executable, commonly the prefix path followed by `python.exe`, while **Windows Path** is the path to the non-console executable, often `pythonw.exe`.
+Clicking "Auto-detect" will attempt to fill in the remaining information based off the executable at **path**, and will look for `python.exe` under **prefix path** if not specified yet.
+**Library Path** specifies the root of the standard library, but this value may be ignored if PTVS is able to request a more accurate path from the interpreter.
+**Architecture** is normally detected and filled in for you, and **language version** can be selected from the drop down menu.
 
-**Path Environment** Variable is the environemnt variable that the interpreter is going to look at to find search paths. PTVS will change the value of the variable when starting Python so that it contains the project's search paths. Typically this property should be set to `PYTHONPATH`, but some interpreters use a different value.
+**Path Environment** Variable is the environment variable that the interpreter is going to look at to find search paths.
+PTVS will change the value of the variable when starting Python so that it contains the project's search paths.
+Typically this property should be set to `PYTHONPATH`, but some interpreters use a different value.
 
 You can delete environments you have added by coming back to this Cofiguration page and clicking **Remove**.
 
@@ -59,6 +65,7 @@ You can delete environments you have added by coming back to this Cofiguration p
 
 ![Python Environments](Images/PythonEnvironments.png)
 
-Here we see that there are several Interpreters installed, including Enthought's Canopy. We've made CPython 2.7 the current default. We've created a Virtual Environment using CPython 2.7 and its database is currently being refreshed because of an added package.
+Here we see that there are several Interpreters installed, including IronPython.
+We've made Python 3.4 the current default, and Python 2.7 needs to have its completion DB refreshed because of a newly installed package.
 
 Interpreter databases are used to improve IntelliSense speed and reduce memory usage for the standard library and any libraries installed into site-packages. Analyzing all of the available source files can take anywhere from a minute to an hour or more, depending on what you have installed. However, once complete, you will get detailed IntelliSense and won't have to refresh the database again until you install more libraries.
