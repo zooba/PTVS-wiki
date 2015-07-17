@@ -92,7 +92,7 @@ Now the debugger can be used to inspect the current state, including variables a
 
 If you are being interrupted often by the debugger breaking on exceptions, or if the debugger is not breaking on some exceptions that you would like it to break on, you can modify the settings in the Exceptions window. On the Debug menu, click Exceptions, and expand the Python Exceptions entry. Here you can see all the exceptions that are already know and can be configured.
 
-![Exceptions dialog](Images/ExceptionsWindow.png)
+![Exceptions window](Images/ExceptionsDialog.png)
 
 The checkbox for each exception controls whether the debugger *always* breaks when it is raised. You should check this box when you want to break more often for a particular exception.
 
