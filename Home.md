@@ -3,6 +3,8 @@ Python Tools for Visual Studio Documentation
 
 Getting Started
 ---------------
+[![Getting Started](VideoThumbnails/GettingStarted01Small.png) Video Tutorial](http://aka.ms/ptvstutorial)
+
 * [Installation Instructions](PTVS-Installation)
 * [Feature Matrix](Features-Matrix)
 * [Overview Videos](Videos)
@@ -73,7 +75,7 @@ Features in Depth
 
 * [Kinect for Python](PyKinect)
 
-* [wfastcgi](wfastcgi)
+* [wfastcgi](https://pypi.python.org/pypi/wfastcgi) (on PyPI)
 
 Release Notes
 -------------

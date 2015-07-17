@@ -1,14 +1,13 @@
 The Editor
 ==========
 
-<p style="text-align: center;">For a quick overview of how we've improved the editor in PTVS 2.0, please watch the video:</p>
-
-<p><a href="http://www.youtube.com/watch?v=eIr9be6yroY" target="_blank" style="display:inline-block"><img src="VideoThumbnails/Analysis-and-Intellisense.png" alt="Analysis and IntelliSense video" border="0" width="240.0">
-</a></p>
-
 When developing, most of your time is spent in the text editor.
 Python Tools provides a rich editor with functionality to help you be more productive, such as syntax highlighting, identifier and member completion, signature help, method overrides, and search and navigation.
 A background analysis engine uses type inference and whole-program analysis to determine the possible types of each variable, ensuring that the information provided is accurate and up to date.
+
+For a four minute video introduction to editing Python code, see this video.
+
+[![Getting Started Part 3: Editing](VideoThumbnails/GettingStarted03.png)](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
 
 This section describes the editor features in detail.
 
@@ -19,14 +18,14 @@ IntelliSense exposes results of analyzing your programs in three different forms
 
 ### Before You Begin
 
-To improve performance, a lot of our IntelliSense features depend on a *completion database*.
+To improve performance, a lot of Python's IntelliSense features depend on a *completion database*.
 This database is automatically generated in the background for each version of Python you have, and contains all the information about its standard library and any other installed packages.
 You can see the current state of the database in the Python Enviroments list (Ctrl+K, &#96; - Control + K, backtick):
 
 ![Python Environments Window](Images/EnvironmentsWindow.png)
 
 Databases may need refreshing if you add, remove or update packages.
-You can click the "Refresh DB" button at any time to start refreshing.
+Select "IntelliSense" from the dropdown to see the current status of each package, and click the "Refresh DB" button at any time to start refreshing.
 You can close Visual Studio or continue to work while refreshing, but be aware that this is a CPU and memory intensive process that may take over an hour.
 In general, a full refresh will only occur once; subsequent refreshes will be much faster.
 
@@ -34,16 +33,16 @@ In general, a full refresh will only occur once; subsequent refreshes will be mu
 
 Completions are shown as a list of words that may be entered at your current location.
 The lists are based on the context and are filtered to avoid showing options that are incorrect or distracting.
-Completions can be shown at any time by pressing Ctrl+J or Ctrl+Space, or may be triggered automatically by certain commands (such as import) or operators (such as a period/full stop).
+Completions can be shown at any time by pressing Ctrl+J or Ctrl+Space, or may be triggered automatically by certain commands (such as `import`), operators (such as a period/full stop), or by typing at any place where you completions are likely to be helpful.
 
 ![Member completion](Images/CompletionSimple.png)
 
-(To prevent completions from appearing automatically, disable Tools -> Options -> Text Editor -> Python -> Advanced -> Auto list members.
+(To prevent completions from appearing automatically, disable Tools -> Options -> Text Editor -> Python -> Advanced -> Auto list members, or "Automatically show completions for all identifiers" to only prevent completions when typing letters.
 You can still manually show completions by pressing Ctrl+J or Ctrl+Space.)
 
 With a list open, you can search for the completion you want using the arrow keys, the mouse, or by continuing to type.
 As you type more letters, the list is further filtered to show likely completions.
-This filtering is smart and will let you take shortcuts such as:
+This filtering is smart and will let you use shortcuts such as:
 
 * Typing letters that are not at the start of the name, such as 'parse' to find 'argparse'
 * Typing only letters that are at the start of words, such as 'abc' to find 'AbstractBaseClass' or 'air' to find 'as_integer_ratio'
@@ -68,18 +67,18 @@ In general, these members should not be accessed directly, but if you need one, 
 
 (To always show double-underscore members, disable Tools -> Options -> Text Editor -> Python -> General -> Hide advanced members.) 
 
-The 'import' and 'from...import' statements display a list of modules that can be imported and, in the case of 'from...import', the members that can be imported from the specified module.
+The `import` and `from...import` statements display a list of modules that can be imported and, in the case of `from...import`, the members that can be imported from the specified module.
 
 ![Import completion](Images/CompletionImport.png)
 
-The 'raise' and 'except' statements will display lists of classes likely to be error types.
+The `raise` and `except` statements will display lists of classes likely to be error types.
 These may not include all user defined exceptions, but will help you find suitable built-in exceptions quickly.
 
 ![Exception completion](Images/CompletionException.png)
 
-The '@' symbol is used to start a decorator.
-After typing one of these, a list containing 'classmethod', 'staticmethod' and 'property' will appear.
-At present, these are the only decorators that will be shown in this list.
+The `@` symbol is used to start a decorator.
+After typing one of these, a list containing potential decorators will be shown.
+Many of these items will not be usable as decorators and you will need to check library documentation to determine which to use.
 
 ![Decorator completion](Images/CompletionDecorator.png)
 
@@ -87,8 +86,7 @@ At present, these are the only decorators that will be shown in this list.
 
 Signature help is displayed when writing a function call, and includes any documentation and parameter information that is available.
 The amount of information displayed typically depends on how much is written in the documentation strings, but will include any default values.
-Signature help appears automatically after typing the '(' in a function call, and can be displayed at any time by pressing Ctrl+Shift+Space inside a function call.
-
+Signature help appears automatically after typing the `(` in a function call, and can be displayed at any time by pressing Ctrl+Shift+Space inside a function call.
 
 ![Signature help](Images/SignatureHelp.png)
 
@@ -105,8 +103,7 @@ Depending on the identifier, it may display the potential values or types, any a
 ### Semantic Colorization
 
 Semantic Colorization uses information from code analysis to change the colors of variable names.
-For example, variables that refer to modules or classes may be shown in a different color to functions or other values.
-Parameter names may appear in a different color to local or global variables.
+For example, variables that refer to modules or classes may be shown in a different color to functions or other values, and parameter names appear in a different color to local or global variables.
 
 ![Semantic Colorization](Images/SemanticColorization.png)
 
@@ -137,7 +134,7 @@ As you move around in the editor, these will update to show your current context
 ### Navigate To
 
 Navigate To can be displayed at any time by selecting the Edit -> Navigate To command or pressing Ctrl+Comma.
-A search box is provided where you can type any name to see a list of possible matches in your project.
+A search box is provided in the editor where you can type any name to see a list of possible matches in your project.
 The same search is used as for completions, and so partial matches will also be displayed.
 Double-clicking any name, or selecting with arrow keys and Enter, will navigate to the definition of that item.
 
@@ -145,7 +142,7 @@ Double-clicking any name, or selecting with arrow keys and Enter, will navigate 
 
 ### Go To Definition
 
-Go To Definition is invoked through the context menu of an identifier or by pressing F12, and will open the file containing the definition of the currently selected identifier.
+Go To Definition is invoked through the context menu of an identifier or a keyboard shortcut, typically F12, and will open the file containing the definition of the currently selected identifier.
 This works for most class, function, and variable references in your projects and external libraries, provided source code has been found by the analyzer.
 If you are unable to go to a definition, it is likely that it was defined in a compiled file and there is no Python source file.
 
@@ -153,7 +150,7 @@ If you are unable to go to a definition, it is likely that it was defined in a c
 
 ### Find All References
 
-Find All References is also invoked through the context menu or by pressing Shift+F12.
+Find All References is also invoked through the context menu or by pressing its keyboard shortcut, typically Shift+F12.
 It will display a list of all references to the selected symbol that were found by the analyzer, including definitions, import, accesses, and assignments.
 Double-clicking on any item in this list will navigate to its location.
 

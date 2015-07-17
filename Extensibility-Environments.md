@@ -1,8 +1,12 @@
 PTVS Environment Detection
 ==========================
+
 Background
 ----------
-Python Tools for Visual Studio provides automatic detection of well-known Python environments. This saves the user from needing to manually enter details such as the interpreter path, version, and library location, as well as allowing PTVS to customize the behavior of the environment. All environments, both detected and manually configured, are shown in the Python Environments window. See [the environments guide(Python-Environments) for details on how this feature is exposed to users.
+
+Python Tools for Visual Studio provides automatic detection of well-known Python environments. This saves the user from needing to manually enter details such as the interpreter path, version, and library location, as well as allowing PTVS to customize the behavior of the environment. All environments, both detected and manually configured, are shown in the Python Environments window. See [the environments guide](Python-Environments) for details on how this feature is exposed to users.
+
+This document outlines the extensibility of these interfaces for developers who want to provide new forms of detection. PTVS users do not need to read this document.
 
 Core Interfaces
 ---------------
@@ -11,30 +15,30 @@ There are four primary interfaces involved in environment detection. Other relev
 
 ### Microsoft.PythonTools.Interpreter.IPythonInterpreter
 
-An IPythonInterpreter provides information about modules and types to the analysis engine and IntelliSense. Each installed environment can have multiple IPythonInterpreter instances active at any time. Objects implementing IPythonInterpreter are provided by an IPythonInterpreterFactory.
+An `IPythonInterpreter` provides information about modules and types to the analysis engine and IntelliSense. Each installed environment can have multiple `IPythonInterpreter` instances active at any time. Objects implementing `IPythonInterpreter` are provided by an `IPythonInterpreterFactory`.
 
-When using factories based on PythonInterpreterFactoryWithDatabase, there is no need to implement IPythonInterpreter unless the cached type information will be augmented with run-time data.
+When using factories based on `PythonInterpreterFactoryWithDatabase`, there is no need to implement `IPythonInterpreter` unless the cached type information will be augmented with run-time data.
 
 <a id="ipythoninterpreterfactory" />
 ### Microsoft.PythonTools.Interpreter.IPythonInterpreterFactory
 
-Each IPythonInterpreterFactory represents a 'physical' environment, both as represented on disk and as displayed to the user. For example, "Python 2.7" and "Python 3.3" are two separate IPythonInterpreterFactory instances. User projects are always associated with one active factory.
+Each `IPythonInterpreterFactory` represents a 'physical' environment, both as represented on disk and as displayed to the user. For example, "Python 2.7" and "Python 3.3" are two separate `IPythonInterpreterFactory` instances. User projects are always associated with one active factory.
 
 A factory has a stable GUID that uniquely identifies it between sessions: it may be stored in the registry or user project files. Apart from the description, all other settings are provided through an InterpreterConfiguration object.
 
-Generic factories can be created using the `InterpreterFactoryCreator` class or by deriving from PythonInterpreterFactoryWithDatabase. Where the behavior varies significantly from the standard behavior, either IPythonInterpreterFactory or IPythonInterpreterFactoryWithDatabase can be implemented on their own object.
+Generic factories can be created using the `InterpreterFactoryCreator` class or by deriving from `PythonInterpreterFactoryWithDatabase`. Where the behavior varies significantly from the standard behavior, either `IPythonInterpreterFactory` or `IPythonInterpreterFactoryWithDatabase` can be implemented on their own object.
 
 <a id="ipythoninterpreterfactorywithdatabase" />
 ### Microsoft.PythonTools.Interpreter.IPythonInterpreterFactoryWithDatabase
 
-Since IPythonInterpreter must provide type information on demand, it is often desirable to pre-generate this information. To allow PTVS to communicate this process to the user, the IPythonInterpreterFactoryWithDatabase interface can be implemented on the same object as IPythonInterpreterFactory. Its purpose is to indicate whether the type database is up to date, and to expose a trigger to begin regenerating the database. See [AnalyzerStatusUpdater](#analyzerstatusupdater) for information on providing status updates while regenerating.
+Since `IPythonInterpreter` must provide type information on demand, it is often desirable to pre-generate this information. To allow PTVS to communicate this process to the user, the `IPythonInterpreterFactoryWithDatabase` interface can be implemented on the same object as `IPythonInterpreterFactory`. Its purpose is to indicate whether the type database is up to date, and to expose a trigger to begin regenerating the database. See [AnalyzerStatusUpdater](#analyzerstatusupdater) for information on providing status updates while regenerating.
 
-IPythonInterpreterFactoryWithDatabase is optional but strongly recommended when an environment may need time to refresh its cached information. Factories derived from PythonInterpreterFactoryWithDatabase already include a full implementation of this interface using the default database format.
+`IPythonInterpreterFactoryWithDatabase` is optional but strongly recommended when an environment may need time to refresh its cached information. Factories derived from `PythonInterpreterFactoryWithDatabase` already include a full implementation of this interface using the default database format.
 
 <a id="ipythoninterpreterfactoryprovider" />
 ### Microsoft.PythonTools.Interpreter.IPythonInterpreterFactoryProvider
 
-IPythonInterpreterFactoryProvider is implemented by a MEF component. It is a singleton in each process and is responsible for detecting and providing a list of objects implementing IPythonInterpreterFactory. This list may be updated while running if a new environment becomes available, but removals may be ignored (which further implies that the same object must always represent a factory - replacing a factory instance may not behave correctly).
+`IPythonInterpreterFactoryProvider` is implemented by a MEF component. It is a singleton in each process and is responsible for detecting and providing a list of objects implementing `IPythonInterpreterFactory`. This list may be updated while running if a new environment becomes available, but removals may be ignored (which further implies that the same object must always represent a factory - replacing a factory instance may not behave correctly).
 
 Assemblies containing factory providers are loaded at runtime from local machine and per-user registry keys. See [Registration](#Registration) for details on creating these keys.
 
@@ -43,20 +47,20 @@ Creating a new factory provider
 
 ### CPython-based
 
-Environments based on CPython typically require only [IPythonInterpreterFactoryProvider](#ipythoninterpreterfactoryprovider) to be implemented, with generic factories created using InterpreterFactoryCreator. This allows the default implementation to handle all type information and caching, while providing more customization than a user-configured environment.
+Environments based on CPython typically require only [`IPythonInterpreterFactoryProvider`](#ipythoninterpreterfactoryprovider) to be implemented, with generic factories created using InterpreterFactoryCreator. This allows the default implementation to handle all type information and caching, while providing more customization than a user-configured environment.
 
 Calls to `GetInterpreterFactories` should return all the factories that are available for use. Factories that are not currently installed or are otherwise unavailable should not be returned. Further, each call should return the exact objects that were returned on the previous call, as well as any newly available factories (detected using file system or registry watchers, for example).
 
 Consumers of the provider may call `GetInterpreterFactories` at any time. To ensure that all consumers receive notification of newly available factories, the `InterpreterFactoriesChanged` event should be raised. Currently, factories cannot be removed after they have been detected.
 
-A basic example implementation is shown below. Note that this example will only detect a single factory and only when the provider is first created. (See Microsoft.PythonTools.Interpreter.CPythonInterpreterFactoryProvider for a complete and more generalized implementation.)
+A basic example implementation is shown below. Note that this example will only detect a single factory and only when the provider is first created. (See `Microsoft.PythonTools.Interpreter.CPythonInterpreterFactoryProvider` for a complete and more generalized implementation.)
 
 ```csharp
 [Export(typeof(IPythonInterpreterFactoryProvider))]
 [PartCreationPolicy(CreationPolicy.Shared)]
 class MyInterpreterFactoryProvider : IPythonInterpreterFactoryProvider {
     private const string MyGuid = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
-    private IPythonInterpreterFactory _myFactory;
+    private `IPythonInterpreterFactory` _myFactory;
 
     public MyInterpreterFactoryProvider() {
         string basePath = @"C:\Python27";
@@ -77,7 +81,7 @@ class MyInterpreterFactoryProvider : IPythonInterpreterFactoryProvider {
         }
     }
 
-    public IEnumerable<IPythonInterpreterFactory> GetInterpreterFactories() {
+    public IEnumerable<`IPythonInterpreterFactory`> GetInterpreterFactories() {
         if (_myFactory != null) {
             yield return _myFactory;
         }
@@ -89,9 +93,9 @@ class MyInterpreterFactoryProvider : IPythonInterpreterFactoryProvider {
 
 ### Layered (virtualenv-like)
 
-Environments that use multiple sources for libraries are common, and cannot be user-configured. If each library is comprised of Python source files and are not modified often, the easiest implementation is to use [PythonInterpreterFactoryWithDatabase](#pythoninterpreterfactorywithdatabase) to layer one factory on top of another.
+Environments that use multiple sources for libraries are common, and cannot be user-configured. If each library is comprised of Python source files and are not modified often, the easiest implementation is to use [`PythonInterpreterFactoryWithDatabase`](#pythoninterpreterfactorywithdatabase) to layer one factory on top of another.
 
-(See CanopyInterpreter.CanopyInterpreterFactory and CanopyInterpreter.CanopyInterpreterFactoryProvider for a full implementation of a layered factory.)
+(See `CanopyInterpreter.CanopyInterpreterFactory` and `CanopyInterpreter.CanopyInterpreterFactoryProvider` for a full implementation of a layered factory.)
 
 Layering factories assigns responsibility for maintaining the cached analysis database to each level independently, with each factory being responsible for ensuring the one below it is updated when necessary. Only factories returned by the provider will be visible to the user, allowing the provider to prevent users from directly using any lower-level factories.
 
@@ -218,52 +222,52 @@ public override string GetIsCurrentReason(IFormatProvider culture) {
 ### Other
 Environments that are unable or unwilling to use the default implementations of the type database must implement the core interfaces without reference to any other PTVS classes. Implementations of the following interfaces will be required:
 
-* Microsoft.PythonTools.Interpreter.IPythonInterpreterFactoryProvider
- * Provides instances of objects implementing `IPythonInterpreterFactory`.
-* Microsoft.PythonTools.Interpreter.IPythonInterpreterFactory
- * Provides instances of objects implementing `IPythonInterpreter`.
-* Microsoft.PythonTools.Interpreter.IPythonInterpreter
+* `Microsoft.PythonTools.Interpreter.IPythonInterpreterFactoryProvider`
+ * Provides instances of objects implementing ``IPythonInterpreterFactory``.
+* `Microsoft.PythonTools.Interpreter.IPythonInterpreterFactory`
+ * Provides instances of objects implementing ``IPythonInterpreter``.
+* `Microsoft.PythonTools.Interpreter.IPythonInterpreter`
  * Provides access to Python types provided by an environment.
-* Microsoft.PythonTools.Interpreter.IPythonModule
+* `Microsoft.PythonTools.Interpreter.IPythonModule`
  * Provides information about a module object and its members.
-* Microsoft.PythonTools.Interpreter.IPythonType
+* `Microsoft.PythonTools.Interpreter.IPythonType`
  * Provides information about a type object and its members.
-* Microsoft.PythonTools.Interpreter.IPythonFunction
+* `Microsoft.PythonTools.Interpreter.IPythonFunction`
  * Provides information about a function or method and its overloads.
-* Microsoft.PythonTools.Interpreter.IPythonFunctionOverload
+* `Microsoft.PythonTools.Interpreter.IPythonFunctionOverload`
  * Provides information about a single overload of a callable object.
-* Microsoft.PythonTools.Interpreter.IParameterInfo
+* `Microsoft.PythonTools.Interpreter.IParameterInfo`
  * Provides information about a single parameter of an overload.
 
 The following interfaces may be implemented to better interact with PTVS.
 
-* Microsoft.PythonTools.Interpreter.IPythonInterpreterFactoryWithDatabase
+* `Microsoft.PythonTools.Interpreter.IPythonInterpreterFactoryWithDatabase`
  * Provides user feedback and interaction with long-running type cache updates.
-* Microsoft.PythonTools.Interpreter.IPythonInterpreterWithProjectReferences
+* `Microsoft.PythonTools.Interpreter.IPythonInterpreterWithProjectReferences`
  * Allows individual modules to be added as references.
-* Microsoft.PythonTools.Interpreter.ILocatedMember
+* `Microsoft.PythonTools.Interpreter.ILocatedMember`
  * Provides location information for any object that also implements `IMember`.
-* Microsoft.PythonTools.Interpreter.IModuleContext
+* `Microsoft.PythonTools.Interpreter.IModuleContext`
  * Associates opaque interpreter state with modules, allowing instances to be shared.
-* Microsoft.PythonTools.Interpreter.IAdvancedPythonType
+* `Microsoft.PythonTools.Interpreter.IAdvancedPythonType`
  * An extended version of `IPythonType` with support for non-standard Python type.
-* Microsoft.PythonTools.Interpreter.IBuiltinProperty
+* `Microsoft.PythonTools.Interpreter.IBuiltinProperty`
  * Provides information about `property` objects.
-* Microsoft.PythonTools.Interpreter.IPythonConstant
+* `Microsoft.PythonTools.Interpreter.IPythonConstant`
  * Represents a constant of a specific type. The value of the constant is not necessary.
-* Microsoft.PythonTools.Interpreter.IPythonEvent
+* `Microsoft.PythonTools.Interpreter.IPythonEvent`
  * Provides information about events.
-* Microsoft.PythonTools.Interpreter.IPythonMethodDescriptor
+* `Microsoft.PythonTools.Interpreter.IPythonMethodDescriptor`
  * Provides information about a bound function.
-* Microsoft.PythonTools.Interpreter.IPythonMultipleMembers
+* `Microsoft.PythonTools.Interpreter.IPythonMultipleMembers`
  * Provides information about multiple values appearing under a single name.
-* Microsoft.PythonTools.Interpreter.IPythonSequenceType
+* `Microsoft.PythonTools.Interpreter.IPythonSequenceType`
  * Provides information about the contents of a collection.
 
 Registration
 ------------
 
-Interpreter factory providers are exposed using MEF (see [IPythonInterpreterFactoryProvider](#ipythoninterpreterfactoryprovider)). Assemblies containing providers are registered in the `InterpreterFactories` registry key. This key is available in three locations:
+Interpreter factory providers are exposed using MEF (see [`IPythonInterpreterFactoryProvider`](#ipythoninterpreterfactoryprovider)). Assemblies containing providers are registered in the `InterpreterFactories` registry key. This key is available in three locations:
 
 ```
 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\$(VisualStudioVersion)_Config\PythonTools\InterpreterFactories
@@ -273,9 +277,9 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\$(VisualStudioVersion)\Interpr
 
 (Note that these are 32-bit registry entries; 64-bit processes should request a 32-bit view of the registry in order to correctly access the local machine key.)
 
-`$(VisualStudioVersion)` should substituted for each of `12.0`, `11.0` and `10.0`. Separate registration for each version of Visual Studio is required, and because of a required reference to `Microsoft.PythonTools.Analysis.dll`, separate binaries are required for each targeted version. (These can all be built from the same source code, provided they target the correct version of `Microsoft.PythonTools.Analysis.dll`.)
+`$(VisualStudioVersion)` should substituted for each of `14.0` and `12.0`. Separate registration for each version of Visual Studio is required, and because of a required reference to `Microsoft.PythonTools.Analysis.dll`, separate binaries are required for each targeted version. (These can all be built from the same source code, provided they target the correct version of `Microsoft.PythonTools.Analysis.dll`.)
 
-Subkeys of `InterpreterFactories` are created when registering a provider. The subkey name should be unique to avoid conflicting with other providers (using a GUID is recommended), but it has no meaning. Each subkey has a string value named `CodeBase` that specifies the full path to the assembly containing the provider.
+Subkeys of `InterpreterFactories` sholud be created when registering a provider. The subkey name should be unique to avoid conflicting with other providers (using a GUID is recommended), but it has no meaning. Each subkey has a string value named `CodeBase` that specifies the full path to the assembly containing the provider.
 
 For example, these are the keys that are registered as part of a normal installation for VS 2013:
 
@@ -331,9 +335,9 @@ Reference
 
 Provides an active object that communicates with all running PTVS sessions on the local machine. Communication is limited to providing progress updates, which will be displayed in the Python Environments window for the associated interpreter factory.
 
-Because each instance of this object creates a thread and holds references to shared memory and synchronization objects, it is important to call Dispose() when no longer in use.
+Because each instance of this object creates a thread and holds references to shared memory and synchronization objects, it is important to call `Dispose()` when no longer in use.
 
-Factories based on [PythonInterpreterFactoryWithDatabase](#pythoninterpreterfactorywithdatabase) make use of this class with the external analyzer process. There is no need to use this class unless you are implementing a new analyzer.
+Factories based on [`PythonInterpreterFactoryWithDatabase`](#pythoninterpreterfactorywithdatabase) make use of this class with the external analyzer process. There is no need to use this class unless you are implementing a new analyzer.
 
 `TODO: Usage example`
 
@@ -341,12 +345,12 @@ Factories based on [PythonInterpreterFactoryWithDatabase](#pythoninterpreterfact
 
 Specifies all the configurable properties for an interpreter factory. Importantly, it specifies the Python language version and paths to interpreter executables. 
 
-See [InterpreterFactoryCreator](#interpreterfactorycreator) for example usage.
+See [`InterpreterFactoryCreator`](#interpreterfactorycreator) for example usage.
 
 <a id="interpreterfactorycreator" />
 ### Microsoft.PythonTools.Interpreter.InterpreterFactoryCreator
 
-A static class that provides helper functions for creating generic interpreter factories based on PythonInterpreterFactoryWithDatabase. The creation options are provided as an instance of Microsoft.PythonTools.Interpreter.InterpreterFactoryCreationOptions.
+A static class that provides helper functions for creating generic interpreter factories based on `PythonInterpreterFactoryWithDatabase`. The creation options are provided as an instance of `Microsoft.PythonTools.Interpreter.InterpreterFactoryCreationOptions`.
 
 ```csharp
 var factory = InterpreterFactoryCreator.CreateInterpreterFactory(
@@ -366,21 +370,21 @@ var factory = InterpreterFactoryCreator.CreateInterpreterFactory(
 
 ### Microsoft.PythonTools.Interpreter.IPythonInterpreterWithProjectReferences
 
-Implemented on the same object implementing IPythonInterpreter to support references to other VS projects, such as C++ projects that compile to .pyd.
+Implemented on the same object implementing `IPythonInterpreter` to support references to other VS projects, such as C++ projects that compile to .pyd.
 
-See the implementation in Microsoft.PythonTools.Interpreter.CPythonInterpreter for usage.
+See the implementation in `Microsoft.PythonTools.Interpreter.CPythonInterpreter` for usage.
 
 <a id="pythoninterpreterfactorywithdatabase" />
 ### Microsoft.PythonTools.Interpreter.PythonInterpreterFactoryWithDatabase
 
-An implementation of [IPythonInterpreterFactoryWithDatabase](#ipythoninterpreterfactorywithdatabase) that uses the default database format ([PythonTypeDatabase](#pythontypedatabase)) and assumes that the environment is laid out similarly to a standard CPython install. This applies for most distributions of CPython and some other interpreters, and so is often a much simpler way to implement a new factory.
+An implementation of [`IPythonInterpreterFactoryWithDatabase`](#ipythoninterpreterfactorywithdatabase) that uses the default database format ([`PythonTypeDatabase`](#pythontypedatabase)) and assumes that the environment is laid out similarly to a standard CPython install. This applies for most distributions of CPython and some other interpreters, and so is often a much simpler way to implement a new factory.
 
-See [InterpreterFactoryCreator](#interpreterfactorycreator) for methods to create instances of this class, rather than deriving from it. Environments that want to use a different database format should implement the core interpreter interfaces and avoid the `PythonInterpreterFactoryWithDatabase` class.
+See [`InterpreterFactoryCreator`](#interpreterfactorycreator) for methods to create instances of this class, rather than deriving from it. Environments that want to use a different database format should implement the core interpreter interfaces and avoid the `PythonInterpreterFactoryWithDatabase` class.
 
 <a id="pythontypedatabase" />
 ### Microsoft.PythonTools.Interpreter.PythonTypeDatabase
 
-The default database implementation used for storing cached type information. Using PythonTypeDatabase allows extensions to avoid having to reimplement most of the interpreter interfaces and analysis generation, but requires the interpreter to be sufficiently similar to CPython that the scraper scripts work ([file:PythonScraper.py], [file:BuiltinScraper.py] and [file:ExtensionScraper.py]) and the standard library is available as Python source files.
+The default database implementation used for storing cached type information. Using `PythonTypeDatabase` allows extensions to avoid having to reimplement most of the interpreter interfaces and analysis generation, but requires the interpreter to be sufficiently similar to CPython that the scraper scripts work ([file:PythonScraper.py], [file:BuiltinScraper.py] and [file:ExtensionScraper.py]) and the standard library is available as Python source files.
 
 Environments that want to use a different database format should implement the core interpreter interfaces and avoid the `PythonInterpreterFactoryWithDatabase` class.
 

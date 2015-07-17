@@ -1,7 +1,7 @@
 Azure SDK for Python
 ====================
 
-The Azure SDK for Python package makes it easy to consume and manage Microsoft Azure Services. The Azure SDK for Python supports Windows, Mac and Linux.
+The Azure SDK for Python package makes it easy to consume and manage Microsoft Azure Services. The Azure SDK for Python can be used on any operating system that runs Python.
 
 ## Installation
 
@@ -23,7 +23,7 @@ pip install git+https://github.com/Azure/azure-sdk-for-python.git
 
 The Git repository for the SDK is located at [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
 
-If you find any issues or have any questions regarding the usage of the SDK, [please file issues at the repository](https://github.com/Azure/azure-sdk-for-python/issues).
+If you find any issues or have any questions regarding the usage of the SDK, please [file issues at the repository](https://github.com/Azure/azure-sdk-for-python/issues).
 
 ## Documentation
 
