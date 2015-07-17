@@ -163,3 +163,14 @@ The left hand pane of the Object Browser enables you to view all of the modules 
 As you do so, the right hand side updates to reflect the current class you are browsing, and the bottom right hand pane will show you any information about the method currently selected on the right hand side.
 
 ![Object browser](Images/ObjectBrowser.png)
+
+### Outlining
+
+When code is longer than a few lines, Python Tools gives you the ability to collapse that code. When you work in outlined code, you can expand the sections you want to work on, collapse them when you are done, and then move to other sections. When you do not wish to have outlining displayed, you can use the Stop Outlining command to remove the outline information without disturbing your underlying code. 
+
+You can choose to hide some code from view by collapsing a region of code so that it appears under a plus sign (+). You expand a collapsed region by clicking the plus sign. (Or you can press CTRL + M + M to collapse a region and then CTRL+ M + M to expand it again.) You can also collapse an outlining region by double-clicking any line in the region on the outlining margin, which appears just to the left of the code. You can see the contents of a collapsed region as a tooltip when you hover over the collapsed region. 
+
+Regions in the outlining margin are also highlighted when you hover over the margin with the mouse. The default highlighting color may seem rather faint in some color configurations. You can change it in Tools/Options/Environment/Fonts and Colors/Collapsible Region.
+
+![Outlining](Images/Outlining.png)
+![OutliningCollapsed](Images/OutliningCollapsed.png)
