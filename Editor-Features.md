@@ -1,14 +1,13 @@
 The Editor
 ==========
 
-<p style="text-align: center;">For a quick overview of how we've improved the editor in PTVS 2.0, please watch the video:</p>
-
-<p><a href="http://www.youtube.com/watch?v=eIr9be6yroY" target="_blank" style="display:inline-block"><img src="VideoThumbnails/Analysis-and-Intellisense.png" alt="Analysis and IntelliSense video" border="0" width="240.0">
-</a></p>
-
 When developing, most of your time is spent in the text editor.
 Python Tools provides a rich editor with functionality to help you be more productive, such as syntax highlighting, identifier and member completion, signature help, method overrides, and search and navigation.
 A background analysis engine uses type inference and whole-program analysis to determine the possible types of each variable, ensuring that the information provided is accurate and up to date.
+
+For a four minute video introduction to editing Python code, see this video.
+
+[![Getting Started Part 3: Editing](VideoThumbnails/GettingStarted03.png)](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
 
 This section describes the editor features in detail.
 

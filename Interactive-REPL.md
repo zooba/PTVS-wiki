@@ -1,6 +1,10 @@
 Working with the Interactive Window
 ===================================
 
+For a three minute introduction to the Python interactive Window, see this video.
+
+[![Getting Started Part 5: Interactive](VideoThumbnails/GettingStarted05Small.png)](https://youtu.be/yc2CROtTsC0?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
+
 Python Tools for Visual Studio includes interactive windows for each of your installed environments. Also known as REPL (Read/Evaluate/Print Loop) windows, these allow you to enter Python code and see the results immediately. You can use all modules, syntax and variables, just like in a Python script.
 
 ![Python Interactive window](Images/InteractiveMath.png)

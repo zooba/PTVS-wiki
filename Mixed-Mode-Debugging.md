@@ -1,13 +1,8 @@
 ﻿# Mixed-mode debugging
 
-<p style="text-align: center">For a quick overview of mixed-mode debugging, please watch the video:</p>
+For a ten minute introduction to building, testing and debugging native C modules with Visual Studio, see this video.
 
-<p><a href="http://www.youtube.com/watch?v=wvJaKQ94lBY" target="_blank" style="display:inline-block"><img src="VideoThumbnails/mixed-mode-debugging.png" alt="Mixed-Mode Debugging video" border="0" width="240.0">
-</a></p>
-
-<p style="text-align: center; color: red">
-Mixed-mode debugging is only supported on Visual Studio 2012 and above.
-</p>
+[![Deep Dive: Creating Native Modules](VideoThumbnails/NativeModules.png)](https://youtu.be/D9RlT06a1EI)
 
 ## Introduction
 

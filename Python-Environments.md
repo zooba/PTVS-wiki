@@ -1,6 +1,11 @@
 Python Environments
 ===================
 
+For an overview of managing Python environments in Visual Studio, see this video.
+
+[![Deep Dive: Python Interpreters](VideoThumbnails/PythonInterpreters.png)](https://youtu.be/KY1GEOo3qy0)
+
+
 Python comes in many different versions and varieties, such as the various versions of CPython, IronPython for targeting .NET, Jython for the JVM, PyPy for high performance applications, as well as distributions that bundle pre-built packages.
 While many people never need to use more than one, developers often use multiple Python environments.
 

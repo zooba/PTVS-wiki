@@ -1,10 +1,9 @@
 ﻿Cross-platform Remote Debugging
 ===============================
 
-<p style="text-align: center">For a quick overview of Remote Debugging, please watch the video:</p>
+For a five minute video introduction to remotely debugging Python code, see this video.
 
-<p><a href="http://www.youtube.com/watch?v=VTluEosS4Ts" target="_blank" style="display:inline-block"><img src="VideoThumbnails/Cross-Platform-Remote-Debugging.png" alt="Remote Debugging for Windows, Linux and OS X video"></a></p>
-
+[![Deep Dive: Cross-Platform Remote Debugging](VideoThumbnails/RemoteDebugging.png)](https://youtu.be/y1Qq7BrV6Cc)
 
 Overview
 --------

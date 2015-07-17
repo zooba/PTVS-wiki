@@ -1,6 +1,10 @@
 Debugging
 =========
 
+For a four minute overview of debugging Python code with Visual Studio, see this video.
+
+[![Getting Started Part 4: Debugging](VideoThumbnails/GettingStarted04.png)](https://youtu.be/bO7wpzgy74A?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
+
 Visual Studio includes support for debugging applications including attaching to running processes, evaluating expressions in the watch and immediate windows, and inspecting local variables, step in, out, and over statements, set the next statement, and breaking on exceptions. With Python Tools for Visual Studio installed, all of this functionality is available for Python projects.
 
 This section provides a brief overview of debugging in Visual Studio, and details the extensions and features specific to Python projects.

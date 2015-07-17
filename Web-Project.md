@@ -1,6 +1,10 @@
 Python Web Projects
 ===================
 
+For a three minute introduction to Python web projects, see this video.
+
+[![Getting Started Part 6: Web sites](VideoThumbnails/GettingStarted06Small.png)](https://youtu.be/FJx5mutt1uk?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
+
 Python Tools for Visual Studio includes support for developing web projects in frameworks such as Django and Flask.
 This support includes a set of templates and a debug launcher that can be configured to handle various frameworks.
 Templates for Bottle, Django and Flask are included.
@@ -150,7 +154,11 @@ See our [Cloud Service Projects](Cloud-Project) page for more information on Mic
 
 ### Tutorials
 
-See the following tutorials for examples of using PTVS to create web applications for Microsoft Azure.
+For a walkthrough of creating and deploying a Django website using Visual Studio, see this video.
+
+[![Deep Dive: Creating a Django Website](VideoThumbnails/DjangoAndAzure.png)](https://youtu.be/WG3pGmoo8nE)
+
+See the following tutorials for examples of using Python to create web applications for Microsoft Azure.
 
  * [Bottle and Azure Table Storage on Azure](Bottle-and-Azure-Table-Storage-on-Azure)
  * [Bottle and MongoDB on Azure](Bottle-and-MongoDB-on-Azure)
