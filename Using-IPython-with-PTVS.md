@@ -2,6 +2,7 @@
 
 ## PTVS has a number of REPL modes to choose from:
 **REPL** | **Description** | **Editing** | **Debugging** | **Images**
+----- | ----- | ----- | ----- | -----
 Standard | Default REPL, talks to Python directly | Standard editing (multiline, etc). | Yes, via `$attach` | No
 IPython | REPL talks to IPython backend | IPython commands, Pylab conveniences | No | Yes, inline in REPL
 IPython w/o Pylab | REPL talks to IPython backend | Standard IPython | No | Yes, separate window
