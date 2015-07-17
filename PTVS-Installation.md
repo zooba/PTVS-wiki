@@ -3,6 +3,8 @@ Python Tools for Visual Studio Installation
 
 ## Quick Start
 
+Here's the general overview of installing the IDE:
+
 1. Install Visual Studio 2015 Community or higher and select Custom installation.
 
 2. Check "Python Tools for Visual Studio" under "Programming Languages"
