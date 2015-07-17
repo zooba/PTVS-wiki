@@ -20,7 +20,7 @@ This short series of six 3-5 minute videos covers the main features of Python To
 
 ## Source Control
 
-[![Deep Dive: Source Control](VideoThumnails/SourceControl.png)](https://youtu.be/Aq8eqApnugM)
+[![Deep Dive: Source Control](VideoThumbnails/SourceControl.png)](https://youtu.be/Aq8eqApnugM)
 
 See how to use git and TFS version control with Python projects in Visual Studio.
 
