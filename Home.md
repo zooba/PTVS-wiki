@@ -3,7 +3,8 @@ Python Tools for Visual Studio Documentation
 
 Getting Started
 ---------------
-[![Getting Started](https://github.com/Microsoft/PTVS/wiki/VideoThumbnails/GettingStarted01Small.png) Video Tutorial](http://aka.ms/ptvstutorial)
+[![Getting Started](https://github.com/Microsoft/PTVS/wiki/VideoThumbnails/GettingStarted01Small.png)](http://aka.ms/ptvstutorial)
+[Video Tutorial](http://aka.ms/ptvstutorial)
 
 * [Installation Instructions](PTVS-Installation)
 * [Feature Matrix](Features-Matrix)
