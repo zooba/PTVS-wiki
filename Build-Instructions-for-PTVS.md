@@ -21,8 +21,6 @@ Note that you need at least Community Edition of either Microsoft Visual Studio 
 
 An existing PTVS installation will interfere with the build process, so if you have already installed PTVS you should uninstall it.
 
-HPC Pack 2008 R2 dependencies | Client Utilities: http://www.microsoft.com/en-us/download/details.aspx?id=17017, SDK: http://www.microsoft.com/en-us/download/details.aspx?id=12218
-
 Finally you'll need to disable strong name verification for the Python Tools binaries. This can be done by merging the `Python\Prerequisites\EnableSkipVerification.reg` file (or `Python\Prerequisites\EnableSkipVerificationX86.reg`, depending on your system architecture). This will install registry keys which disable strong name verification for the assemblies built by PTVS.  If you also want to use the installer you may need to stop and restart the Windows Installer service (from an elevated command prompt, type `net stop msiserver` and then `net start msiserver`).
 
 ### Optional Projects
