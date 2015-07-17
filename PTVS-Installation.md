@@ -15,7 +15,7 @@ Here's the general overview of installing the IDE:
 
 ## A complete and perpetually FREE Python IDE
 
-The Python Tools for Visual Studio extension is completely free, and there are many free options for Visual Studio that can use it.
+The Python Tools for Visual Studio extension is completely free, and there are many free Visual Studio editions that can use it.
 
 * Visual Studio 2015
  * Community Edition
