@@ -3,7 +3,7 @@ Projects
 
 For a three minute introduction to using Python projects in Visual Studio, see this video.
 
-[![Getting Started Part 2: Projects](VideoThumbnails/GettingStarted02Small.png)](https://youtu.be/KHPoVpL7zHg?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
+[![Getting Started Part 2: Projects](VideoThumbnails/GettingStarted02.png)](https://youtu.be/KHPoVpL7zHg?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
 
 Python Tools allows you to create projects using the Visual Studio project system.
 Project files (.pyproj) reference all the source and content files associated with your project, showing them all in the Solution Explorer window and enabling PTVS to most efficiently work with your files.
@@ -25,7 +25,7 @@ See the [Python Environments](Python-Environments) page for more information on 
 Projects are used by Visual Studio to integrate with source control providers, allowing you to transparently integrate with git, TFS, or to other systems using third-party extensions.
 For an introduction to using git and TFS version control in Visual Studio, see this video.
 
-[![Deep Dive: Source Control](VideoThumnails/SourceControl.png)](https://youtu.be/Aq8eqApnugM)
+[![Deep Dive: Source Control](VideoThumbnails/SourceControl.png)](https://youtu.be/Aq8eqApnugM)
 
 
 Project Types
