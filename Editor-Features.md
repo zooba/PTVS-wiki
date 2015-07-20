@@ -22,7 +22,7 @@ To improve performance, a lot of Python's IntelliSense features depend on a *com
 This database is automatically generated in the background for each version of Python you have, and contains all the information about its standard library and any other installed packages.
 You can see the current state of the database in the Python Enviroments list (Ctrl+K, &#96; - Control + K, backtick):
 
-![Python Environments Window](Images/EnvironmentsWindowIntelliSense.png)
+[![Python Environments Window](Images/EnvironmentsWindowIntelliSense.png)](Images/EnvironmentsWindowIntelliSense.png)
 
 Databases may need refreshing if you add, remove or update packages.
 Select "IntelliSense" from the dropdown to see the current status of each package, and click the "Refresh DB" button at any time to start refreshing.
