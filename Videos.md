@@ -1,12 +1,10 @@
-<!--
 To be updated when this video is published
 
 # What is PTVS
 
-[![Python Tools for Visual Studio](TODO)](TODO)
+[![Python Tools for Visual Studio](VideoThumbnails/WhatIsPTVSSmall.png)](https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Python-Tools-for-Visual-Studio-2015)
 
 A three minute introduction to Python, Visual Studio, and how to get it.
--->
 
 # Getting Started with PTVS
 
