@@ -1,5 +1,4 @@
-Python Tools for Visual Studio Documentation
-============================================
+![Python Tools for Visual Studio](Images/PTVS.png)
 
 Getting Started
 ---------------
