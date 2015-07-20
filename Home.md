@@ -1,5 +1,3 @@
-![Python Tools for Visual Studio](https://github.com/Microsoft/PTVS/wiki/Images/PTVS.png)
-
 Getting Started
 ---------------
 [![Getting Started](https://github.com/Microsoft/PTVS/wiki/VideoThumbnails/GettingStarted01Small.png)](http://aka.ms/ptvstutorial)  
