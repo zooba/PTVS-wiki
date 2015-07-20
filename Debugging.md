@@ -80,6 +80,8 @@ When a value being inspected is a string (`str`, `unicode`, `bytes` and `bytearr
 
 In HTML mode, an embedded browser instance will be used to render the HTML code in the string. In XML and JSON modes, there is syntax highlighting for the corresponding markup, and you can expand and collapse individual nodes in the tree. 
 
+![JSON Visualizer](Images/DebugStringVisualizerJson.png)
+
 ![XML Visualizer](Images/DebugStringVisualizerXml.png)
 
 ### Exceptions
