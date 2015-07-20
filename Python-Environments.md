@@ -37,7 +37,7 @@ A global (or system-wide) environment is one that is installed on your PC and is
 These are usually installed to your C:\ drive or Program Files, and are automatically detected when Python Tools is running or when it is started.
 Global environments can be viewed in the Python Environments window (Ctrl+K, ` - Control + K, backtick):
 
-[<img src="Images/EnvironmentsWindow.png" width="600" alt="The Python Environments window" />](Images/EnvironmentsWindow.png)
+[![Environments Window](Images/EnvironmentsWindow.png)](Images/EnvironmentsWindow.png)
 
 This image shows two environments: Python 2.7 is the current default, which means that all new projects will use it for executing, debugging, checking syntax, displaying import and member completions, and any other tasks that require an environment.
 Changing the default environment will affect all projects that have not had a [project environment](#projectenvironments) added.
@@ -51,7 +51,7 @@ The pip tab allows you to manage your installed packages, including updating or 
 Searching will filter your currently installed packages as well as searching [PyPI](https://pypi.python.org).
 You can also enter any `pip install` command here, including flags such as `--user` or `--no-deps`.
 
-![IntelliSense extension](Images/EnvironmentsWindowIntelliSense.png)
+[![IntelliSense extension](Images/EnvironmentsWindowIntelliSense.png)](Images/EnvironmentsWindowIntelliSense.png)
 
 The IntelliSense tab shows the current completion DB status.
 The completion DB stores precomputed results for your installed packages.
