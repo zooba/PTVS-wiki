@@ -1,4 +1,4 @@
-![Python Tools for Visual Studio](Images/PTVS.png)
+![Python Tools for Visual Studio](https://github.com/Microsoft/PTVS/wiki/Images/PTVS.png)
 
 Getting Started
 ---------------
