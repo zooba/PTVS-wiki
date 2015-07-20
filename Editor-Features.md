@@ -115,6 +115,20 @@ To customize the colors used, modify the Python entries in Tools -> Options -> E
 
 (To disable semantic colorization, disable Tools -> Options -> Text Editor -> Python -> Advanced -> Color names based on types.)
 
+### Code Snippets
+
+Code snippets are short pieces of code that can be inserted into your files by typing a shortcut and pressing Tab, or using the Insert Code Snippet or Surround With commands under Edit -> IntelliSense.
+For example, typing `class` followed by the Tab key will generate the rest of the class.
+You can type over the name and bases list, moving between the highlighted fields with Tab, then press Enter to begin typing the body.
+
+![Code Snippets](Images/CodeSnippets.png)
+
+Code snippets can be customized by [creating a code snippet](https://msdn.microsoft.com/en-us/library/ms165394.aspx) and importing it through the Code Snippets Manager.
+Find the manager under Tools -> Code Snippets Manager.
+If you write a great code snippet that you'd like to share, feel free to post it in a gist and [let us know](https://github.com/Microsoft/PTVS/issues) - we may be able to include it in the next update of PTVS.
+
+![Code Snippets Manager](Images/CodeSnippetsManager.png)
+
 Navigation
 ----------
 
@@ -170,7 +184,9 @@ When code is longer than a few lines, Python Tools gives you the ability to coll
 
 You can choose to hide some code from view by collapsing a region of code so that it appears under a plus sign (+). You expand a collapsed region by clicking the plus sign. (Or you can press CTRL + M + M to collapse a region and then CTRL+ M + M to expand it again.) You can also collapse an outlining region by double-clicking any line in the region on the outlining margin, which appears just to the left of the code. You can see the contents of a collapsed region as a tooltip when you hover over the collapsed region. 
 
-Regions in the outlining margin are also highlighted when you hover over the margin with the mouse. The default highlighting color may seem rather faint in some color configurations. You can change it in Tools/Options/Environment/Fonts and Colors/Collapsible Region.
+Regions in the outlining margin are also highlighted when you hover over the margin with the mouse. The default highlighting color may seem rather faint in some color configurations. You can change it in Tools, Options, Environment, Fonts and Colors, Collapsible Region.
+
+Arbitrary regions can be defined by putting `# region` and `# endregion` comments around a block of code.
 
 ![Outlining](Images/Outlining.png)
 ![OutliningCollapsed](Images/OutliningCollapsed.png)
