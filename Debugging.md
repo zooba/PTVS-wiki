@@ -117,9 +117,9 @@ The active environment is shown in bold in Solution Explorer. This environment c
 
 To run your program with a different environment, you should add it to your project and make it active. This will ensure that the code completions and error messages given in the editor are valid for the version of Python you intend to use.
 
-### Command-line Arguments
+### Command-line Arguments and Environment Variables
 
-To launch your script with certain command-line arguments, provide them as a project property in the Debug section.
+To launch your script with certain command-line arguments or environment variables, provide them as a project property in the Debug section.
 
 Right-click on your project and choose Properties, then select the Debug tab. Here, you can provide the following options (for the standard launcher; see [Launch Modes](#launch-modes) for information about other launchers):
 
@@ -127,6 +127,9 @@ Right-click on your project and choose Properties, then select the Debug tab. He
 * Script Arguments
 * Interpreter Arguments
 * Interpreter Path
+* Environment Variables
+
+![Project Properties - Debug](Images/ProjectPropertiesDebug.png)
 
 The Search Paths setting matches what is shown in Solution Explorer. While you can modify this value here, it is simpler to use Solution Explorer, which provides a folder browser and will automatically convert paths to relative form.
 
@@ -135,6 +138,8 @@ Script Arguments are added to the command used to launch your script, appearing 
 Interpreter Arguments are arguments for the interpreter itself, and appear before the name of your script. Common arguments here are `-W ...` to control warnings, `-O` to slightly optimize your program, and `-u` to use unbuffered IO. IronPython users are likely to use this field to pass `-X` options, such as `-X:Frames` or `-X:MTA`.
 
 The Interpreter Path setting will override the path associated with the current environment. This may be useful for launching your script with a non-standard interpreter.
+
+Environment Variables allows you to specify any additional environment variables that you want to be set for your script. It is a multiline textbox, and every line should be of the form `NAME=VALUE`. This setting is applied last, on top of any existing global environment variables, and after `PYTHONPATH` is set according to the Search Paths setting, and so it can be used to manually override any of those.
 
 ### Launch Modes
 
