@@ -26,7 +26,7 @@ Attributes:
 - No IPython support 
 - Decent mixed IronPython <-> C# debugging 
 
-If you've already installed VS and PTVS, we recommend the [IronPython 2.7.5](http://ironpython.codeplex.com/downloads/get/970325). This will run an MSI from [http://ironpython.codeplex.com](ironpython.codeplex.com) which will install Python and will be auto-detected by PTVS.
+If you've already installed VS and PTVS, we recommend the [IronPython 2.7.5](http://ironpython.codeplex.com/downloads/get/970325). This will run an MSI from [http://ironpython.codeplex.com](http://ironpython.codeplex.com) which will install Python and will be auto-detected by PTVS.
 
 **PyPy** – this is a high performance tracing JIT implementation of Python: [www.pypy.org](http://www.pypy.org/).
 
