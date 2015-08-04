@@ -11,7 +11,7 @@ Here's the general overview of installing the IDE:
 
 3. Install a Python interpreter and libraries (these are *not* bundled with PTVS)
 
-![PTVS Install](Images/PTVSRTMInstall.png)
+[![PTVS Install](Images/PTVSRTMInstall.png)](Images/PTVSRTMInstall.png)
 
 ## A complete and perpetually FREE Python IDE
 
