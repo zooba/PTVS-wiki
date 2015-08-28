@@ -13,12 +13,6 @@ To install the **latest stable version** (supports Python 2.7 and 3.3+):
 pip install azure
 ```
 
-To install from the latest sources in the Git repository (requires Git to be installed):
-
-```
-pip install git+https://github.com/Azure/azure-sdk-for-python.git
-```
-
 ## Support
 
 The Git repository for the SDK is located at [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
@@ -27,15 +21,12 @@ If you find any issues or have any questions regarding the usage of the SDK, ple
 
 ## Documentation
 
-The [readme in the repository](https://github.com/Azure/azure-sdk-for-python) includes some basic documentation and code examples.
+Documentation can be found at [http://azure-sdk-for-python.readthedocs.org/en/latest/index.html](http://azure-sdk-for-python.readthedocs.org/en/latest/index.html).
 
-The [Python Developer Center](http://azure.microsoft.com/en-us/develop/python/) on [azure.microsoft.com](http://azure.microsoft.com/) has more documentation on the various features of the SDK:
+For public APIs without documentation, the unit tests are a good source of information.
 
- - [Storage Blob](http://azure.microsoft.com/en-us/develop/python/how-to-guides/blob-service/)
- - [Storage Queue](http://azure.microsoft.com/en-us/develop/python/how-to-guides/queue-service/)
- - [Storage Table](http://azure.microsoft.com/en-us/develop/python/how-to-guides/table-service/)
- - [Service Bus Queues](http://azure.microsoft.com/en-us/develop/python/how-to-guides/service-bus-queues/)
- - [Service Bus Topics/Subscriptions](http://azure.microsoft.com/en-us/develop/python/how-to-guides/service-bus-topics/)
- - [Service Management](http://azure.microsoft.com/en-us/develop/python/how-to-guides/service-management/)
+* [Resource Management unit tests](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-mgmt/tests)
+* [Service Bus unit tests](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicebus/tests)
+* [Service Management unit tests](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicemanagement-legacy/tests)
+* [Storage unit tests](https://github.com/Azure/azure-storage-python/tree/master/tests)
 
-For public APIs without documentation, the [unit tests](https://github.com/Azure/azure-sdk-for-python/tree/master/tests) are a good source of information.
