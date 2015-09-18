@@ -41,7 +41,7 @@ I don't have VS installed and want the FREE PTVS/VS version! | Install VS 2015 C
 
 **Interpreter** | **Description** | **Download Link**
 ----- | ----- | -----
-CPython | This is the native Python interpreter. Best for max language and library compatibility. We recommend 3.4 32-bit for new projects or 2.7 for maximum package compatibility. | All versions: http://python.org/download/<br>[Python 2.7.10 32-bit](https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi)<br>[Python 3.4.3 32-bit](https://www.python.org/ftp/python/3.4.3/python-3.4.3.msi)
+CPython | This is the native Python interpreter. Best for max language and library compatibility. We recommend 3.5 32-bit for new projects or 2.7 for maximum package compatibility. | All versions: http://python.org/download/<br>[Python 2.7.10 32-bit](https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi)<br>[Python 3.5.0 32-bit](https://www.python.org/ftp/python/3.5.0/python-3.5.0-webinstall.exe)
 IronPython | This is the .NET implementation of Python. Best for interfacing with C#. We recommend 2.7.5. | [IronPython 2.7.5](http://ironpython.codeplex.com/downloads/get/970325)
 
 Alternatively, you may prefer to install an entire distribution (see below), in which case you do not need to install from any of the above links.
