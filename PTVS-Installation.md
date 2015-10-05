@@ -41,12 +41,14 @@ I don't have VS installed and want the FREE PTVS/VS version! | Install VS 2015 C
 
 **Interpreter** | **Description** | **Download Link**
 ----- | ----- | -----
-CPython | This is the native Python interpreter. Best for max language and library compatibility. We recommend 3.5 32-bit for new projects or 2.7 for maximum package compatibility. | All versions: http://python.org/download/<br>[Python 2.7.10 32-bit](https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi)<br>[Python 3.5.0 32-bit](https://www.python.org/ftp/python/3.5.0/python-3.5.0-webinstall.exe)
+CPython | This is the native Python interpreter. Best for max language and library compatibility. We recommend 3.5 32-bit for new projects or 2.7 for compatibility with legacy packages. | All versions: http://python.org/download/<br>[Python 2.7.10 32-bit](https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi)<br>[Python 3.5.0 32-bit](https://www.python.org/ftp/python/3.5.0/python-3.5.0-webinstall.exe)
 IronPython | This is the .NET implementation of Python. Best for interfacing with C#. We recommend 2.7.5. | [IronPython 2.7.5](http://ironpython.codeplex.com/downloads/get/970325)
-
-Alternatively, you may prefer to install an entire distribution (see below), in which case you do not need to install from any of the above links.
+Anaconda | This is a distribution by Continuum Analytics that includes CPython and many useful packages. | http://www.continuum.io/downloads
+Canopy | This is a distribution by Enthought that includes CPython 2.7 and many useful packages. | https://www.enthought.com/downloads/
 
 Help me decide [which interpreter is best for me](Selecting-and-Installing-Python-Interpreters).
+
+In general, we recommend installing a distribution rather than a standalone interpreter, as most people encounter issues installing libraries. See [Python Package Installation Options](#python-package-installation-options) below for more ways to get packages.
 
 ## 3. Let's make sure everything installed OK
 
