@@ -16,8 +16,11 @@ Visual Studio 2013 **OR** Visual Studio 2015 | Free Community Editions: http://v
 Visual Studio SDK | For [VS 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40758) The SDK for VS 2015 is available in the VS 2015 installer
 Azure SDK for .NET | [Downloads](http://azure.microsoft.com/en-us/downloads/archive-net-downloads/)
 Visual Studio Test Host | [VSTestHost Releases](https://github.com/Microsoft/VisualStudio-TestHost/releases)
+PowerShell 3 (if using Windows 7) | [Download](http://www.microsoft.com/en-us/download/details.aspx?id=34595)  (see [blog post on picking the right installer](http://blogs.technet.com/b/heyscriptingguy/archive/2013/06/02/weekend-scripter-install-powershell-3-0-on-windows-7.aspx))
 
-Note that you need at least Community Edition of either Microsoft Visual Studio 2013 or 2015. In general, PTVS should be built using the same year version of Visual Studio it is going to be run in, but can be built with Community, Professional or higher.
+Note that you need at least Community Edition of either Microsoft Visual Studio 2013 or 2015. In general, PTVS should be built using the same year version of Visual Studio it is going to be run in, but can be built with Community, Professional or higher. 
+
+You must check the *"C++"* checkbox when installing Visual Studio, because the C++ compiler is required for compilation.
 
 An existing PTVS installation will interfere with the build process, so if you have already installed PTVS you should uninstall it.
 
