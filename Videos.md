@@ -54,7 +54,7 @@ Get the big picture on Microsoft's commitment to two open-source programming lan
 
 ## Visual Studio Toolbox
 
-[![Visual Studio Toolbox](VideoThumbnails/VisualStudioToolbox2014.jpg)](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Python-Tools-for-Visual-Studio)
+[![Visual Studio Toolbox](VideoThumbnails/VSToolbox2014.jpg)](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Python-Tools-for-Visual-Studio)
 
 Join Robert and Steve for a look at Python Tools for Visual Studio on Visual Studio Toolbox (Sept 2014).
 
