@@ -46,6 +46,12 @@ See how to create and test a Django website with Visual Studio, and then deploy 
 
 # Other Videos
 
+## Using Python in Visual Studio
+
+[![PyData NYC 2015](VideoThumbnails/PyData2015.jpg)](https://www.youtube.com/watch?v=T68wFIjzMfw)
+
+A 90-minute tutorial given at [PyData](http://pydata.org/) NYC 2015 on using Visual Studio to create a Python microservice.
+
 ## Python and Node.js: Microsoft's Best Kept Secrets
 
 [![Build 2015](VideoThumbnails/Build2015.jpg)](https://channel9.msdn.com/events/Build/2015/3-657)
