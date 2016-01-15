@@ -44,6 +44,19 @@ See how to create, test and debug native Python extension modules with Visual St
 
 See how to create and test a Django website with Visual Studio, and then deploy it to Microsoft Azure.
 
+# Other Videos
+
+## Python and Node.js: Microsoft's Best Kept Secrets
+
+[![Build 2015](VideoThumbnails/Build2015.jpg)](https://channel9.msdn.com/events/Build/2015/3-657)
+
+Get the big picture on Microsoft's commitment to two open-source programming languages, with some demos of the Visual Studio and Azure support that is available.
+
+## Visual Studio Toolbox
+
+[![Visual Studio Toolbox](VideoThumbnails/VisualStudioToolbox2014.jpg)](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Python-Tools-for-Visual-Studio)
+
+Join Robert and Steve for a look at Python Tools for Visual Studio on Visual Studio Toolbox (Sept 2014).
 
 # Video Archive
 
