@@ -50,7 +50,7 @@ See how to create and test a Django website with Visual Studio, and then deploy 
 
 [![Build 2015](VideoThumbnails/Build2015.jpg)](https://channel9.msdn.com/events/Build/2015/3-657)
 
-Get the big picture on Microsoft's commitment to two open-source programming languages, with some demos of the Visual Studio and Azure support that is available.
+Get the big picture on Microsoft's commitment to two open-source programming languages, with some demos of the Visual Studio and Azure support that is available (May 2015).
 
 ## Visual Studio Toolbox
 
@@ -59,6 +59,8 @@ Get the big picture on Microsoft's commitment to two open-source programming lan
 Join Robert and Steve for a look at Python Tools for Visual Studio on Visual Studio Toolbox (Sept 2014).
 
 # Video Archive
+
+These videos refer to old versions of PTVS and are mostly kept around for historical interest.
 
 ## Overview of PTVS 2.0 features (about 2-4 minutes per area):
 
