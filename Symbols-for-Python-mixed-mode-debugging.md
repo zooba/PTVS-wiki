@@ -52,6 +52,8 @@ Apart from Python 3.5, all of these downloads are in the form of a .zip file con
 3.3.0: [32-bit](http://python.org/ftp/python/3.3.0/python-3.3.0-pdb.zip) | [64-bit](http://python.org/ftp/python/3.3.0/python-3.3.0.amd64-pdb.zip)
 
 #### Python 3.4
+3.4.4: [32-bit](https://www.python.org/ftp/python/3.4.4/python-3.4.4-pdb.zip) | [64-bit](https://www.python.org/ftp/python/3.4.4/python-3.4.4.amd64-pdb.zip)
+
 3.4.3: [32-bit](https://www.python.org/ftp/python/3.4.3/python-3.4.3-pdb.zip) | [64-bit](https://www.python.org/ftp/python/3.4.3/python-3.4.3.amd64-pdb.zip)
 
 3.4.2: [32-bit](https://www.python.org/ftp/python/3.4.2/python-3.4.2-pdb.zip) | [64-bit](https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64-pdb.zip)
@@ -88,5 +90,4 @@ After you have obtained the .pdb files for your interpreter, you should make Vis
 Now you need to add the folder in which .pdb files reside to the location list. To do so, click on the "Add" button (first from the left in the row of buttons above the list), and then enter the folder path in the textbox that appears. Click "OK" to close the dialog.
 
 Next time you will start debugging a Python application with mixed-mode debugger, the symbols will be located and loaded, and it will be possible to debug Python code.
-
 
