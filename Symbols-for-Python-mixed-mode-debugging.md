@@ -18,6 +18,8 @@ If you are using the reference Python interpreter downloaded from the official P
 Apart from Python 3.5, all of these downloads are in the form of a .zip file containing the requisite .pdb files. After downloading it, unpack it to any directory, and follow the instructions below on registering them with Visual Studio.
 
 #### Python 2.7
+2.7.11: [32-bit](https://www.python.org/ftp/python/2.7.11/python-2.7.11-pdb.zip) | [64-bit](https://www.python.org/ftp/python/2.7.11/python-2.7.11.amd64-pdb.zip)
+
 2.7.10: [32-bit](https://www.python.org/ftp/python/2.7.10/python-2.7.10-pdb.zip) | [64-bit](https://www.python.org/ftp/python/2.7.10/python-2.7.10.amd64-pdb.zip)
 
 2.7.9: [32-bit](https://www.python.org/ftp/python/2.7.9/python-2.7.9-pdb.zip) | [64-bit](https://www.python.org/ftp/python/2.7.9/python-2.7.9.amd64-pdb.zip)
@@ -90,4 +92,3 @@ After you have obtained the .pdb files for your interpreter, you should make Vis
 Now you need to add the folder in which .pdb files reside to the location list. To do so, click on the "Add" button (first from the left in the row of buttons above the list), and then enter the folder path in the textbox that appears. Click "OK" to close the dialog.
 
 Next time you will start debugging a Python application with mixed-mode debugger, the symbols will be located and loaded, and it will be possible to debug Python code.
-
