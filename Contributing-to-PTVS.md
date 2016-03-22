@@ -1,5 +1,3 @@
-## Contributing to PTVS
-
 So, you want to contribute to PTVS?  The very first step you'll need to take is [building PTVS for the first time](Build-Instructions-for-PTVS). There's instructions on what you'll need to install, how to build, how to run and debug from within Visual Studio, and even how to create the installer which we ship with major releases.
 
 From there you'll need to decide what you want to work on. You might have an immediate idea of a feature you'd like to work on, but if not the issue tracker has hundreds of active [features](https://github.com/Microsoft/PTVS/issues) as well as a number of open issues which you could either work on directly or might inspire your own ideas.
@@ -17,4 +15,12 @@ Once you've developed some code and are ready to contribute it back there's just
 * Bug fixes will generally have a short review prior to acceptance 
 * Pull requests should have an associated issue or feature request
 
-Licensing: Since the PTVS is under the Apache 2.0 license, all contributions will be made under that license as well. Please don’t submit anything with any other licensing statements. If you want to make a contribution that includes code that you received under a different license, please let us know and we can figure out what to do. Please be sure that you have the right to make your contribution, including clearance from your employer if applicable.
+## Licensing
+
+Since the PTVS is under the Apache 2.0 license, all contributions will be made under that license as well. Please don’t submit anything with any other licensing statements. If you want to make a contribution that includes code that you received under a different license, please let us know and we can figure out what to do. Please be sure that you have the right to make your contribution, including clearance from your employer if applicable.
+
+## Code of Conduct
+
+In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
+
+See our full [Code of Conduct](https://github.com/Microsoft/PTVS/blob/master/CODE_OF_CONDUCT.md) for details.
