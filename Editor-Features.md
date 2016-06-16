@@ -33,7 +33,7 @@ In general, a full refresh will only occur once; subsequent refreshes will be mu
 
 Completions are shown as a list of words that may be entered at your current location.
 The lists are based on the context and are filtered to avoid showing options that are incorrect or distracting.
-Completions can be shown at any time by pressing Ctrl+J or Ctrl+Space, or may be triggered automatically by certain commands (such as `import`), operators (such as a period/full stop), or by typing at any place where you completions are likely to be helpful.
+Completions can be shown at any time by pressing Ctrl+J or Ctrl+Space, or may be triggered automatically by certain commands (such as `import`), operators (such as a period/full stop), or by typing at any place where completions are likely to be helpful.
 
 ![Member completion](Images/CompletionSimple.png)
 
