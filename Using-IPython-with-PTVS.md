@@ -22,6 +22,7 @@ We highly recommend installing IPython, matplotlib and their dependencies from a
 Go to your Python installation directory and start IPython in Pylab mode (**ipython --pylab**), and enter the following:
 
 ```python
+x = linspace(0, 5, 10)
 y = x ** 2
 plot(x, y, 'r')
 ```
