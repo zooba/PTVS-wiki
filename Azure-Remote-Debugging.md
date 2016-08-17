@@ -1,7 +1,7 @@
 Remote Debugging on Microsoft Azure
 ===================================
 
-Python Tools has special support for remote debugging of code running on Microsoft Azure Web Sites. Unlike simple remote debugging, the target machine is not directly accessible over TCP in this scenario, but PTVS comes with a proxy that exposes the debugger protocol via HTTP. When you create a new Microsoft Azure project, the proxy is fully configured for you in an automatically generated web.debug.config, and will be enabled on the web site when you publish your project in the "Debug" configuration by following [these steps](Web-Project#publishing-to-microsoft-azure].
+Python Tools has special support for remote debugging of code running on Microsoft Azure Web Sites. Unlike simple remote debugging, the target machine is not directly accessible over TCP in this scenario, but PTVS comes with a proxy that exposes the debugger protocol via HTTP. When you create a new Microsoft Azure project, the proxy is fully configured for you in an automatically generated web.debug.config, and will be enabled on the web site when you publish your project in the "Debug" configuration by following [these steps](Web-Project#publishing-to-microsoft-azure).
 
 Since Azure remote debugging uses web sockets, it must be enabled for your web site in the management portal. This setting can be found on the web site management page, on the "Configure" tab - don't forget to click "Save" after changing it:
 
