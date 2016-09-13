@@ -28,6 +28,10 @@ To install the python package into your python distribution, run the following c
 
 Note: You may need to run it in an elevated command prompt, depending on the options you've selected when you installed your python distribution.
 
+### Git
+
+Cookiecutter uses the copy of git.exe that is included by default with Visual Studio 15, so there is no need to install a standalone release of git. If for some reason it can't find the git that comes with VS, it will try to find one in the PATH.
+
 ```
 pip install cookiecutter
 ```
