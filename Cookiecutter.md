@@ -22,6 +22,8 @@ The Visual Studio 15 installer includes 32-bit and 64-bit distributions of CPyth
 
 You can also download the latest CPython distributions from [python.org](https://www.python.org/downloads/windows/). 
 
+Important: Restart VS after installing all the prerequisites.
+
 ### Cookiecutter python package
 
 To install the python package into your python distribution, run the following command.
@@ -37,9 +39,13 @@ If python isn't in your PATH, try the Python launcher instead:
 py -m pip install cookiecutter
 ```
 
+Important: Restart VS after installing all the prerequisites.
+
 ### Git
 
 Cookiecutter uses the copy of git.exe that is included by default with Visual Studio 15, so there is no need to install a standalone release of git. If for some reason it can't find the git that comes with VS, it will try to find one in the PATH.
+
+Important: Restart VS after installing all the prerequisites.
 
 ## Using Cookiecutter extension
 
