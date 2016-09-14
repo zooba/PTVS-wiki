@@ -20,7 +20,7 @@ Cookiecutter works with Python 2.7, 3.3, 3.4, 3.5.
 
 The Visual Studio 15 installer includes 32-bit and 64-bit distributions of CPython 2.7, CPython 3.5, Anaconda 2.7 and Anaconda 3.5. You can select them under the Data Science or Python workloads.
 
-You can also download the latest CPython distributions from [https://www.python.org/downloads/windows/](python.org). 
+You can also download the latest CPython distributions from [python.org](https://www.python.org/downloads/windows/). 
 
 ### Cookiecutter python package
 
