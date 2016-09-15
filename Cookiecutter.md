@@ -49,7 +49,7 @@ Cookiecutter uses the copy of git.exe that is included by default with Visual St
 
 ## Using Cookiecutter extension
 
-To open the Cookiecutter window, go to View -> Other Windows -> Cookiecutter.
+To open the Cookiecutter window, go to View -> Cookiecutter Explorer.
 
 ### Discover templates
 
