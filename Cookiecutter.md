@@ -22,7 +22,7 @@ The Visual Studio 15 installer includes 32-bit and 64-bit distributions of CPyth
 
 You can also download the latest CPython distributions from [python.org](https://www.python.org/downloads/windows/). 
 
-Important: Restart VS after installing all the prerequisites.
+**Important**: Restart Visual Studio after installing all the prerequisites.
 
 ### Cookiecutter python package
 
@@ -39,13 +39,13 @@ If python isn't in your PATH, try the Python launcher instead:
 py -m pip install cookiecutter
 ```
 
-Important: Restart VS after installing all the prerequisites.
+**Important**: Restart Visual Studio after installing all the prerequisites.
 
 ### Git
 
 Cookiecutter uses the copy of git.exe that is included by default with Visual Studio 15, so there is no need to install a standalone release of git. If for some reason it can't find the git that comes with VS, it will try to find one in the PATH.
 
-Important: Restart VS after installing all the prerequisites.
+**Important**: Restart Visual Studio after installing all the prerequisites.
 
 ## Using Cookiecutter extension
 
@@ -64,6 +64,16 @@ The home page displays a list of templates to choose from.
 - **Custom**: When a custom location is entered in the search box, it will appear in this section. You can either type in a full path to the GitHub repository, or the full path to a folder on your local disk.
 
 Once you've selected the template you want to use, click on **Next**. This will clone the template's repository to your local machine, if necessary, then it will load the template.
+
+### Cloning
+
+Cookiecutter templates that are located in a git repository online must be cloned to your local machine before they can be loaded by Cookiecutter.
+
+If you select a template from the **Recommended** or **GitHub** sections, or if you enter a custom URL into the search box and select that template, it will be cloned/installed on your local machine. If that template was installed in a previous session of Visual Studio, it will automatically delete the installed template, and clone the latest version.
+
+If you select a template from the **Installed** section, or if you enter a custom folder path into the search box and select that template, it will load the template from your local machine (no cloning).
+
+**Limitation**: Cookiecutter templates are cloned/installed under a single folder `~/.cookiecutters`. Each subfolder is named after the git repository name, which does **not** include the GitHub user name. This can cause conflicts if you attempt to clone/install 2 different templates with the same name (for example, you'll find a few templates named `cookiecutter-flask`). When that happens, the tool will prevent you from overwriting your existing template with a different template of the same name. To confirm, delete the installed template with `Del` and try installing again.
 
 ### Output Location
 
