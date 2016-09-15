@@ -79,6 +79,8 @@ If you select a template from the **Installed** section, or if you enter a custo
 
 After the template is loaded successfully, the view will change to a form where the first input field is **Create To**. This allows you to specify where your want Cookiecutter to generate files.
 
+**Important**: The files that are created by Cookiecutter will be copied directly to the folder that you've specified. The subfolder that is created by the cookiecutter command-line tool will not appear.
+
 If you specify a folder that isn't empty, a warning message will pop up when you click **Create**.
 
 If you are familiar with the template's output and are okay with it potentially overwriting files in your output folder, you can dismiss the warning. If not, you should cancel and select an empty folder, and manually copy the created files to your non-empty output folder.
@@ -118,3 +120,7 @@ This controls the visibility of the help information bar at the top of the Cooki
 ### Error loading template
 
 Some templates may be using invalid data types, such as boolean, in their `cookiecutter.json`. This should be reported to the template author. Click on the **Issues** link in the template information pane.
+
+### Hook script failed
+
+Some templates may use post-generation scripts that are not compatible with the Cookiecutter UI. For example, scripts that query the user for input will fail due to not having a terminal console.
