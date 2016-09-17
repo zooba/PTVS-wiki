@@ -30,12 +30,12 @@ We recommend using Visual Studio 2015 Community Edition, which is the most power
 
 ## 1. Install VS & PTVS
 
-**Which one describes you?** | **Installation steps** | **Links**
------ | ----- | -----
-I already have Visual Studio **2015** and just want Python support | Modify VS through Programs and Features and select Python Tools for Visual Studio |
-I already have Visual Studio **2013** and just want Python support | Install PTVS and you are good to go. | [PTVS 2.2 for VS 2013](https://github.com/Microsoft/PTVS/releases/v2.2)
-I only have Visual Studio 2012 or 2010, but I still want PTVS | Install PTVS 2.1 | PTVS 2.1 for [VS 2012](https://pytools.codeplex.com/downloads/get/920478) and [VS 2010](https://pytools.codeplex.com/downloads/get/920479)
-I don't have VS installed and want the FREE PTVS/VS version! | Install VS 2015 Community Edition (recommended), Express 2015 for Web or for Desktop <br/> Install PTVS | Visual Studio 2015 [Community Edition](TODO)<br/> [Express for Web](TODO)<br/> [Express for Desktop](TODO)<br/> [PTVS 2.2 for VS 2015](https://github.com/Microsoft/PTVS/releases/v2.2)
+| **Which one describes you?** | **Installation steps** | **Links** |
+| ----- | ----- | ----- |
+| I already have Visual Studio **2015** and just want Python support | Modify VS through Programs and Features and select Python Tools for Visual Studio |  |
+| I already have Visual Studio **2013** and just want Python support | Install PTVS and you are good to go. | [PTVS 2.2 for VS 2013](https://github.com/Microsoft/PTVS/releases/v2.2) |
+| I only have Visual Studio 2012 or 2010, but I still want PTVS | Install PTVS 2.1 | PTVS 2.1 for [VS 2012](https://pytools.codeplex.com/downloads/get/920478) and [VS 2010](https://pytools.codeplex.com/downloads/get/920479) |
+| I don't have VS installed and want the FREE PTVS/VS version! | Install VS 2015 Community Edition (recommended), Express 2015 for Web or for Desktop <br/> Install PTVS | Visual Studio 2015 [Community Edition](TODO)<br/> [Express for Web](TODO)<br/> [Express for Desktop](TODO)<br/> [PTVS 2.2 for VS 2015](https://github.com/Microsoft/PTVS/releases/v2.2) |
 
 ## 2. Select and install an interpreter
 
