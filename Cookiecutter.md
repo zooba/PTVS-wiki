@@ -16,36 +16,15 @@ The Cookiecutter extension is included with Visual Studio 15. You can select it 
 
 ### Python interpreter
 
-Cookiecutter works with Python 2.7, 3.3, 3.4, 3.5.
+The Cookiecutter extension requires Python 3.3 or later.
 
-The Visual Studio 15 installer includes 32-bit and 64-bit distributions of CPython 2.7, CPython 3.5, Anaconda 2.7 and Anaconda 3.5. You can select them under the Data Science or Python workloads.
+The Visual Studio 15 installer includes 32-bit and 64-bit distributions of CPython 3.5 and Anaconda 3.5. You can select them under the Data Science or Python workloads.
 
 You can also download the latest CPython distributions from [python.org](https://www.python.org/downloads/windows/). 
 
-**Important**: Restart Visual Studio after installing all the prerequisites.
+On first use, Cookiecutter Explorer will download the [cookiecutter python package](https://pypi.python.org/pypi/cookiecutter), and install it into a private Python virtual environment.
 
-### Cookiecutter python package
-
-To install the python package into your python distribution, run the following command.
-
-Note: You may need to run it in an elevated command prompt, depending on the options you've selected when you installed your python distribution.
-
-```
-pip install cookiecutter
-```
-
-If python isn't in your PATH, try the Python launcher instead:
-```
-py -m pip install cookiecutter
-```
-
-**Important**: Restart Visual Studio after installing all the prerequisites.
-
-### Git
-
-Cookiecutter uses the copy of git.exe that is included by default with Visual Studio 15, so there is no need to install a standalone release of git. If for some reason it can't find the git that comes with VS, it will try to find one in the PATH.
-
-**Important**: Restart Visual Studio after installing all the prerequisites.
+**Important**: Restart Visual Studio after installing Python.
 
 ## Using Cookiecutter extension
 
