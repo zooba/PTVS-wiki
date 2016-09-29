@@ -130,3 +130,30 @@ Some templates may be using invalid data types, such as boolean, in their `cooki
 ### Hook script failed
 
 Some templates may use post-generation scripts that are not compatible with the Cookiecutter UI. For example, scripts that query the user for input will fail due to not having a terminal console.
+
+### Hook script not supported on Windows
+
+If the post script is `.sh`, then it may not be associated with an application on your Windows machine. You may see a Windows dialog pop up asking you to find a compatible application in the Windows store.
+
+### Templates with known issues
+
+This isn't an exhaustive list, but we'll update it as we find more. I've checked the top 25 GitHub results so far.
+
+Clone failures
+
+- **wildfish/cookiecutter-django-crud** (invalid character `|` in subfolder name)
+- **cookiecutter-pyvanguard** (invalid character `|` in subfolder name)
+
+Load failures
+
+- **chrisdev/wagtail-cookiecutter-foundation** (uses a boolean type in cookiecutter.json)
+- **quintoandar/cookiecutter-android** (no template folder)
+
+Run failures
+
+- **iknite/cookiecutter-ansible-role** (post hook script requires console input)
+- **benregn/cookiecutter-django-ansible** (jinja error)
+
+Uses bash (not fatal)
+
+- **openstack-dev/cookiecutter**
