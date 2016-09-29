@@ -8,6 +8,8 @@ The Cookiecutter extension for Visual Studio provides a graphical user interface
 
 To learn more about Cookiecutter, using templates, or creating your own templates, see the [official Cookiecutter documentation](https://cookiecutter.readthedocs.io/en/latest/).
 
+![Cookiecutter Overview](Images/CookiecutterOverview.png)
+
 ## Prerequisites
 
 ### Visual Studio 15 Preview 5
@@ -89,6 +91,8 @@ If you are familiar with the template's output and are okay with it potentially 
 
 Each Cookiecutter template defines its own set of options, and specifies a default value for each one. The default value is displayed in both tooltip and text box watermark.
 
+![Cookiecutter Template Options](Images/CookiecutterTemplateOptions.png)
+
 Sometimes the default value may be a code snippet. This happens when an option's default value is calculated dynamically (often based on another option value). If you are okay with using the dynamic value, you can leave the text box empty.
 
 It is possible to define user default values for specific options by using a user configuration file. When the Cookiecutter extension detects a user configuration file, it will overwrite the template's default values with the user config's default values. See the [official Cookiecutter documentation on User Config](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html) to learn how to create your personal configuration file.
@@ -102,6 +106,8 @@ After the files are created successfully, you will be prompted to open the files
 ## Cookiecutter Options
 
 To see the options, go to Tools -> Options -> Cookiecutter.
+
+![Cookiecutter Tools Options](Images/CookiecutterToolsOptions.png)
 
 ### Recommended Feed URL
 
