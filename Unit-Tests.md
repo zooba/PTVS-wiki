@@ -8,9 +8,10 @@ PTVS will discover tests using the standard `unittest` package. To ensure your t
 
 * Import unittest
 * Derive a class from unittest.TestCase
-* Define a method named "test<name of your test>"
+* The tests are defined with methods whose names start with the letters test. This naming convention informs the test runner about which methods represent tests.
 * (Optional) Add a call to unittest.main()
  * This will allow you to run your script directly to execute the tests
+
 
 To add a module with a test class, select Project -> Add New Item (Ctrl+Shift+A) and choose "Python Unit Test".
 
