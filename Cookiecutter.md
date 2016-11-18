@@ -102,6 +102,67 @@ To request changes to the official feed, make a pull request against [the source
 
 This controls the visibility of the help information bar at the top of the Cookiecutter tool window.
 
+## Optimizing Cookiecutter Templates for Visual Studio
+
+For the basics of authoring a Cookiecutter template, see the [official Cookiecutter documentation](https://cookiecutter.readthedocs.io/en/latest/).
+
+The default rendering of a template variables depends on the type of data (string or list).
+
+- String: Label for variable name, text box for entering value, and a watermark showing the default value. Tooltip on the text box shows the default value.
+- List: Label for variable name, combo box for selecting a value. Tooltip on the combo box shows the default value.
+
+It is possible to improve on this by specifying additional metadata in your `cookiecutter.json` file. This metadata is specific for Visual Studio, and if present, the Cookiecutter CLI will simply ignore it.
+
+Note: The Cookiecutter extension supports templates created for Cookiecutter v1.4.
+
+Here is an example `cookiecutter.json` where additional Visual Studio metadata is included.
+
+```
+{
+    "site_name": "web-app",
+    "python_version": ["3.5.2", "2.7.12"],
+    "use_azure": "y",
+
+    "_visual_studio": {
+        "site_name": {
+            "label": "Site name",
+            "description": "E.g. <site-name>.azurewebsites.net (can only contain alphanumeric characters and `-`)"
+        },
+        "python_version": {
+            "label": "Python version",
+            "description": "The version of Python to run the site on"
+        },
+        "use_azure" : {
+            "label": "Use Azure",
+            "description": "Include Azure deployment files",
+            "selector": "yesno",
+            "url": "https://azure.microsoft.com"
+        }
+    }
+}
+```
+
+### Label
+
+Optional. When a `label` is specified, it will appear above the editor for the variable, instead of the name of the variable.
+
+### Description
+
+Optional. When a `description` is specified, the tooltip that appears on the edit control will show that description, instead of the default value for that variable.
+
+### URL (will be available post VS 2017 RC)
+
+Optional. When a `url` is specified, the label becomes a hyperlink, with a tooltip that shows the URL. Clicking on the hyperlink will open the user's default browser to that URL.
+
+### Selector
+
+Optional. A `selector` allows customization of the editor for a variable. The following selectors are currently supported:
+
+- `string`: Standard text box, default for strings.
+- `list`: Standard combo box, default for lists.
+- `yesno`: Combo box to choose between `y` and `n`, for strings.
+- `odbcConnection`: Text box with a "..." button that brings up a database connection dialog.
+
 ## Troubleshooting
 
 ### Error loading template
