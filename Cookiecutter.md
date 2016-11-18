@@ -12,42 +12,21 @@ To learn more about Cookiecutter, using templates, or creating your own template
 
 ## Prerequisites
 
-### Visual Studio 15 Preview 5
+### Visual Studio 2017
 
-The Cookiecutter extension is included with Visual Studio 15. You can select it from the Python workload.
+The Cookiecutter extension is included with Visual Studio 2017.
+
+Select either **Python development** or **Data science and analytical applications** workloads, or add it as an individual component by selecting **Cookiecutter template support**.
 
 ### Python interpreter
 
-Cookiecutter works with Python 2.7, 3.3, 3.4, 3.5.
+Cookiecutter support requires an installation of Python 3.3 or later (32-bit or 64-bit).
 
-The Visual Studio 15 installer includes 32-bit and 64-bit distributions of CPython 2.7, CPython 3.5, Anaconda 2.7 and Anaconda 3.5. You can select them under the Data Science or Python workloads.
+Both **Python development** or **Data science and analytical applications** include a compatible Python interpreter by default. You can also add them as individual components: **Python 3 (3.5.2)**, **Anaconda3 (4.2.0)**.
 
-You can also download the latest CPython distributions from [python.org](https://www.python.org/downloads/windows/). 
+The latest CPython distributions are also available from [python.org](https://www.python.org/downloads/windows/). 
 
-**Important**: Restart Visual Studio after installing all the prerequisites.
-
-### Cookiecutter python package
-
-To install the python package into your python distribution, run the following command.
-
-Note: You may need to run it in an elevated command prompt, depending on the options you've selected when you installed your python distribution.
-
-```
-pip install cookiecutter
-```
-
-If python isn't in your PATH, try the Python launcher instead:
-```
-py -m pip install cookiecutter
-```
-
-**Important**: Restart Visual Studio after installing all the prerequisites.
-
-### Git
-
-Cookiecutter uses the copy of git.exe that is included by default with Visual Studio 15, so there is no need to install a standalone release of git. If for some reason it can't find the git that comes with VS, it will try to find one in the PATH.
-
-**Important**: Restart Visual Studio after installing all the prerequisites.
+Cookiecutter window will display a warning if it doesn't find a compatible Python interpreter. If you install Python while VS is running, click the Home button on the Cookiecutter toolbar to detect the newly installed interpreter.
 
 ## Using Cookiecutter extension
 
@@ -101,7 +80,9 @@ It is possible to define user default values for specific options by using a use
 
 Click **Create** to launch Cookiecutter with the specified output folder and options.  Click **Cancel** to go back to the home page to select a different template.
 
-After the files are created successfully, you will be prompted to open the files in **Solution Explorer - Folder View**.
+After the files are created successfully, you will be prompted to open the files in **Solution Explorer**.
+
+![Cookiecutter Template Options](Images/CookiecutterFilesCreated.png)
 
 ## Cookiecutter Options
 
