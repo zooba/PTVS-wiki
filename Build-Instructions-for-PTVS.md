@@ -26,6 +26,25 @@ An existing PTVS installation will interfere with the build process, so if you h
 
 Finally you'll need to disable strong name verification for the Python Tools binaries. This can be done by merging the `Python\Prerequisites\EnableSkipVerification.reg` file (or `Python\Prerequisites\EnableSkipVerificationX86.reg`, depending on your system architecture). This will install registry keys which disable strong name verification for the assemblies built by PTVS.  If you also want to use the installer you may need to stop and restart the Windows Installer service (from an elevated command prompt, type `net stop msiserver` and then `net start msiserver`).
 
+### Building with Visual Studio 2017
+
+Select these workloads:
+
+- .NET desktop development
+- Desktop development with C++
+- Web development
+- Visual Studio extension development
+
+Add these individual components:
+
+- Windows 8.1 SDK
+- Visual C++ runtime for UWP
+
+TODO:
+
+- ML project build errors
+- Templates project build errors
+
 ### Optional Projects
 
 Visual Studio 2010 Professional requires the Standalone Profiler to build the **Profiling, VsPyProf, VsPyProfX86** and **ProfilingUITests** projects. Alternatively, these can be unloaded from the solution if you do not want to install or build the profiler.
