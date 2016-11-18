@@ -80,7 +80,7 @@ It is possible to define user default values for specific options by using a use
 
 Click **Create** to launch Cookiecutter with the specified output folder and options.  Click **Cancel** to go back to the home page to select a different template.
 
-After the files are created successfully, you will be prompted to open the files in **Solution Explorer**.
+After the files are created successfully, you will have the option to open the files in **Solution Explorer**.
 
 ![Cookiecutter Template Options](Images/CookiecutterFilesCreated.png)
 
