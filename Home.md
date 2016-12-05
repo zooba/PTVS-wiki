@@ -69,6 +69,8 @@ Features in Depth
 
 * [PyLint](PyLint)
 
+* [Cookiecutter](Cookiecutter)
+
 * [Azure SDK for Python](AzureSDK)
 
 * [Kinect for Python](PyKinect)
