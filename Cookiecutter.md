@@ -150,7 +150,7 @@ Optional. When a `label` is specified, it will appear above the editor for the v
 
 Optional. When a `description` is specified, the tooltip that appears on the edit control will show that description, instead of the default value for that variable.
 
-### URL (will be available post VS 2017 RC)
+### URL
 
 Optional. When a `url` is specified, the label becomes a hyperlink, with a tooltip that shows the URL. Clicking on the hyperlink will open the user's default browser to that URL.
 
