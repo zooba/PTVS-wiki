@@ -99,6 +99,9 @@ The first is packaging, which runs on your development machine and produces a si
 This package is deployed to Microsoft Azure, which will initialize one or more virtual machines for each role and deploy the source.
 
 As each virtual machine activates, it will execute the `ConfigureCloudService.ps1` script and install any dependencies.
+This script by default installs a recent version of Python from [nuget](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) and any packages specified in a `requirements.txt` file.
+You can freely modify the `ConfigureCloudService.ps1` script in your project, or add alternate startup tasks to your cloud definition.
+
 Finally, worker roles will execute `LaunchWorker.ps1`, which will start running your Python script, while web roles will initialize IIS and begin handling web requests.
 
 ![Publish a Cloud Project](Images/PublishCloudProject.png)
@@ -106,35 +109,13 @@ Finally, worker roles will execute `LaunchWorker.ps1`, which will start running 
 Dependencies
 ------------
 
-There are two ways in which dependencies can be provided through the configuration script.
-
-### WebPI References
-
-WebPI references can be used when deploying to Cloud Service to automatically install dependencies.
-A custom feed can be used to define your own dependencies, other than the ones included in the default feed.
-See the [documentation on TechNet](http://technet.microsoft.com/en-us/library/ee424350(v=ws.10).aspx) for information on the WebPI feed schema.
-
-If you do not specify any WebPI references and your project is using Python 2.7 or Python 3.4, a reference will automatically be added for the 32-bit version of the interpreter.
-To use another version of Python, you will need to create a custom feed with installation information for your interpreter, or define the `SuppressGenerateWebPiReference` property in your project.
-You can also add another startup task to your `ServiceDefinition.csdef` file and deploy the installer with your project.
-
-WebPI will be downloaded automatically if necessary, which may count as chargeable bandwidth usage.
-To include WebPI as part of your deployment, download the installer and add it to the bin directory alongside `ConfigureCloudService.ps1`.
-The installer must be named `WebPlatformInstaller_x86_en-US.msi` or `WebPlatformInstaller_amd64_en-US.msi` depending on the architecture of the remote machine.
-
-### Requirements.txt
-
-For Cloud Service, the `ConfigureCloudService.ps1` script is able to use pip to install a set of dependencies.
+For Cloud Service, the `ConfigureCloudService.ps1` script uses pip to install a set of Python dependencies.
 These should be specified in a file named `requirements.txt` (customizable by modifying `ConfigureCloudService.ps1`).
 The file is executed with `pip -r requirements.txt` as part of initialization.
 
 Note that Cloud Service instances do not include C compilers, so all libraries with C extensions must provide precompiled binaries.
-
-See [Virtual Environments](Python-Environments#managing-required-packages) for more information on managing `requirements.txt` files.
-
 pip and its dependencies, as well as the packages in `requirements.txt`, will be downloaded automatically and may count as changeable bandwidth usage.
-To include your dependencies as part of your deployment, create a virtual environment on your local machine and change the Build Action of your `requirements.txt` file to **None**.
-This will prevent it from being deployed and executed on the instance.
+See [Virtual Environments](Python-Environments#managing-required-packages) for more information on managing `requirements.txt` files, including how to avoid compiler issues on the server and bandwidth charges.
 
 Troubleshooting
 ---------------
@@ -146,9 +127,8 @@ If your web or worker role does not behave correctly after deployment, check the
  * `LaunchWorker.ps1` (for worker roles)
  * `ps.cmd`
 
-* Your Python project includes either:
- * a `requirements.txt` file listing all dependencies, OR
- * a virtual environment containing all dependencies.
+* Your Python project includes a `requirements.txt` file listing all dependencies
+ * optionally, a collection of wheel files
 
 * Enable Remote Desktop on your Cloud Service and investigate the log files.
 

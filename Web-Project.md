@@ -122,27 +122,88 @@ These settings assume that Pyramid is installed into a virtual environment at ".
 
 If you have settings for another framework that you would like to share, or if you'd like to request settings for another framework, visit our [issue tracker](https://github.com/Microsoft/PTVS/issues) and start a post.
 
-Publishing to Microsoft Azure
------------------------------
+Publishing to Microsoft Azure App Service
+-----------------------------------------
 
-Web projects can be published in a variety of ways.
+There are two primary ways to publish to Azure App Service.
 Deployment from source control can be used in the same way as for other languages.
 See the [Azure documentation](http://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control/) for information on source control deployment.
 
-Deploying to an Azure Web Site or Cloud Service requires the [Azure SDK Tools for VS 2015](http://go.microsoft.com/fwlink/?linkid=518003) or [VS 2013](http://go.microsoft.com/fwlink/p/?linkid=323510), which ared installed using the [Web Platform Installer](http://www.microsoft.com/web/downloads/platform.aspx).
-With these tools installed, Python projects will display a Publish command in the Project menu:
+To publish from within Visual Studio, use the Publish command in the project menu:
 
 ![Publish command](Images/WebPublishMenu.png)
 
-The "Publish" command will deploy your site to an Azure Web Site.
 After selecting the command, a wizard will walk you through creating a web site or importing publish settings, previewing modified files, and publishing to a remote server.
 
-If you plan on debugging your published project directly on Microsoft Azure servers by using Python remote debugging, you need to publish the site in "Debug" configuration.
+When you create a site on App Service, you will need to install Python and any packages your site depends upon.
+You can publish your site first, but it will not run until you have configured Python.
+
+To install Python on App Service, we recommend using the [site extensions](http://www.siteextensions.net/packages?q=Tags%3A%22python%22).
+The Python site extensions are copies of the [official releases](https://www.python.org) of Python, optimized and repackaged for Azure App Service.
+
+A site extension can be deployed through the [Azure Portal](https://portal.azure.com/) on the blade for your web app:
+
+![Add Site Extension](Images/SiteExtensions.png)
+
+If you are using JSON deployment templates, you can specify the site extension as a resource of your site:
+
+```json
+{
+  "resources": [
+    {
+      "apiVersion": "2015-08-01",
+      "name": "[parameters('siteName')]",
+      "type": "Microsoft.Web/sites",
+      ...
+      "resources": [
+        {
+          "apiVersion": "2015-08-01",
+          "name": "python352x64",
+          "type": "siteextensions",
+          "properties": { },
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/sites', parameters('siteName'))]"
+          ]
+        },
+      ...
+```
+
+Finally, you can log in through the [development console](https://github.com/projectkudu/kudu/wiki/Kudu-console) and install a site extension from there.
+
+Currently, the recommended way to install packages is to use the development console after installing the site extension and executing pip directly.
+Using the full path to Python is important, or you may execute the wrong one, and there is generally no need to use a virtual environment.
+
+```
+D:\home\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
+D:\home\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
+```
+
+When deployed to Azure App Service, your site will run behind Microsoft IIS.
+To enable your site to work with IIS, you will need to add at least a `web.config` file.
+There are templates available for some common deployment targets, and these can be easily modified for other uses.
+See the [IIS Configuration Reference](https://www.iis.net/configreference) for information about the available configuration setings.
+
+![Azure Item Templates](Images/AzureItemTemplates.png)
+
+* Azure web.config (FastCGI)
+ *Adds a `web.config` file for when your app provides a [WSGI](https://wsgi.readthedocs.io/en/latest/) object to handle incoming connections.
+* Azure web.config (HttpPlatformHandler)
+ * Adds a `web.config` file for when your app listens on a socket for incoming connections.
+* Azure Static files web.config
+ * When you have one of the above `web.config` files, add this to a subdirectory to exclude it from being handled by your app.
+* Azure Remote debugging web.config
+ * Adds the files necessary for remote debugging over WebSockets.
+* Web Role Support Files
+ * Contains the default deployment scripts for Cloud Service web roles.
+* Worker Role Support Files
+ * Contains the default deployment and launch scripts for Cloud Service worker roles.
+
+If you add the debugging `web.config` template to your project and plan to use Python remote debugging, you will need to publish the site in "Debug" configuration.
 This setting is separate from the current active solution configuration, and always defaults to "Release". To change it, open the "Settings" tab, and use the "Configuration" combo box in the publish wizard:
 
 ![Changing the publish configuration](Images/WebPublishConfig.png)
 
-See the [documentation on Azure.com](http://azure.microsoft.com/en-us/documentation/services/web-sites/#python) for more information on creating and deploying to Web Sites.
+See the [documentation on Azure.com](https://azure.microsoft.com/develop/python/) for more information on creating and deploying to Azure Web Apps.
 
 ![Convert to Microsoft Azure Cloud Service Project command](Images/WebConvertMenu.png)
 
