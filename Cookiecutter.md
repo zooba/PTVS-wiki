@@ -76,6 +76,8 @@ Sometimes the default value may be a code snippet. This happens when an option's
 
 It is possible to define user default values for specific options by using a user configuration file. When the Cookiecutter extension detects a user configuration file, it will overwrite the template's default values with the user config's default values. See the [official Cookiecutter documentation on User Config](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html) to learn how to create your personal configuration file.
 
+If the template specifies Visual Studio specific tasks to execute post generation, then an additional option, **Run additional tasks on completion**, will appear so you can opt out of executing the tasks. The most common use of tasks is to open a web browser, open files in the editor, install dependencies, etc.
+
 ### Create
 
 Click **Create** to launch Cookiecutter with the specified output folder and options.  Click **Cancel** to go back to the home page to select a different template.
@@ -168,9 +170,13 @@ Optional. A `selector` allows customization of the editor for a variable. The fo
 
 _This feature is upcoming in the next RC update_
 
-Cookiecutter has a feature (Post-Generate Hooks) that allows for running arbitrary Python code after the files are generated. It is pretty flexible, but it doesn't allow easy access to Visual Studio. For example, you may want to open a file in the Visual Studio editor, or in its web browser, or trigger the Visual Studio UI that prompts the user to create a virtual environment and install package requirements.
+Cookiecutter has a feature (Post-Generate Hooks) that allows for running arbitrary Python code after the files are generated. It is pretty flexible, but it doesn't allow easy access to Visual Studio.
+
+For example, you may want to open a file in the Visual Studio editor, or in its web browser, or trigger the Visual Studio UI that prompts the user to create a virtual environment and install package requirements.
 
 To allow these scenarios, Visual Studio will look for extended metadata that describes the commands to execute. These will run after the user opens the generated files in solution explorer (or after the files are added to an existing project).
+
+Note that the user can opt-out of running the tasks by unchecking **Run additional tasks on completion** in the template options.
 
 You define the commands by adding a section to cookiecutter.json. Here is an example:
 
