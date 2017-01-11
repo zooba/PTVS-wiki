@@ -205,6 +205,7 @@ If you don't need to pass an argument, you can leave it an empty string or omit 
 
 For more than one argument, you'll need to use an array. For switches, you'll need split the switch and its value in 2 separate arguments in order to ensure proper quoting. For example:
 
+```
   "_visual_studio_post_cmds": [
     {
       "name": "File.OpenFile",
@@ -215,6 +216,7 @@ For more than one argument, you'll need to use an array. For switches, you'll ne
       ]
     }
   ]
+```
 
 Arguments can refer to other Cookiecutter variables. In the examples above, the internal `_output_folder_path` variable is used to form an absolute path to generated files.
 
