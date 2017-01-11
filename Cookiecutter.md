@@ -164,7 +164,9 @@ Optional. A `selector` allows customization of the editor for a variable. The fo
 - `odbcConnection`: Text box with a "..." button that brings up a database connection dialog.
 
 
-## Running Visual Studio specific tasks after creation (NEW in upcoming RC update)
+## Running Visual Studio specific tasks
+
+_This feature is upcoming in the next RC update_
 
 Cookiecutter has a feature (Post-Generate Hooks) that allows for running arbitrary Python code after the files are generated. It is pretty flexible, but it doesn't allow easy access to Visual Studio. For example, you may want to open a file in the Visual Studio editor, or in its web browser, or trigger the Visual Studio UI that prompts the user to create a virtual environment and install package requirements.
 
