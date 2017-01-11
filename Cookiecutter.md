@@ -203,7 +203,7 @@ If you don't need to pass an argument, you can leave it an empty string or omit 
   ]
 ```
 
-For more than one argument, you'll need to use an array. For switches, you'll need split the switch and its value in 2 separate arguments in order to ensure proper quoting. For example:
+For more than one argument, you'll need to use an array. For switches, you'll need to split the switch and its value in 2 separate arguments in order to ensure proper quoting. For example:
 
 ```
   "_visual_studio_post_cmds": [
