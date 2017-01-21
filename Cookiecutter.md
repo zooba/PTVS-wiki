@@ -76,6 +76,8 @@ Sometimes the default value may be a code snippet. This happens when an option's
 
 It is possible to define user default values for specific options by using a user configuration file. When the Cookiecutter extension detects a user configuration file, it will overwrite the template's default values with the user config's default values. See the [official Cookiecutter documentation on User Config](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html) to learn how to create your personal configuration file.
 
+If the template specifies Visual Studio specific tasks to execute post generation, then an additional option, **Run additional tasks on completion**, will appear so you can opt out of executing the tasks. The most common use of tasks is to open a web browser, open files in the editor, install dependencies, etc.
+
 ### Create
 
 Click **Create** to launch Cookiecutter with the specified output folder and options.  Click **Cancel** to go back to the home page to select a different template.
@@ -150,7 +152,7 @@ Optional. When a `label` is specified, it will appear above the editor for the v
 
 Optional. When a `description` is specified, the tooltip that appears on the edit control will show that description, instead of the default value for that variable.
 
-### URL (will be available post VS 2017 RC)
+### URL
 
 Optional. When a `url` is specified, the label becomes a hyperlink, with a tooltip that shows the URL. Clicking on the hyperlink will open the user's default browser to that URL.
 
@@ -162,6 +164,71 @@ Optional. A `selector` allows customization of the editor for a variable. The fo
 - `list`: Standard combo box, default for lists.
 - `yesno`: Combo box to choose between `y` and `n`, for strings.
 - `odbcConnection`: Text box with a "..." button that brings up a database connection dialog.
+
+
+## Running Visual Studio specific tasks
+
+_This feature is upcoming in the next RC update_
+
+Cookiecutter has a feature (Post-Generate Hooks) that allows for running arbitrary Python code after the files are generated. It is pretty flexible, but it doesn't allow easy access to Visual Studio.
+
+For example, you may want to open a file in the Visual Studio editor, or in its web browser, or trigger the Visual Studio UI that prompts the user to create a virtual environment and install package requirements.
+
+To allow these scenarios, Visual Studio will look for extended metadata that describes the commands to execute. These will run after the user opens the generated files in solution explorer (or after the files are added to an existing project).
+
+Note that the user can opt-out of running the tasks by unchecking **Run additional tasks on completion** in the template options.
+
+You define the commands by adding a section to cookiecutter.json. Here is an example:
+
+```
+  "_visual_studio_post_cmds": [
+    {
+      "name": "File.OpenFile",
+      "args": "{{cookiecutter._output_folder_path}}\\readme.txt"
+    },
+    {
+      "name": "Cookiecutter.ExternalWebBrowser",
+      "args": "https://docs.microsoft.com"
+    },
+    {
+      "name": "Python.InstallProjectRequirements",
+      "args": "{{cookiecutter._output_folder_path}}\\dev-requirements.txt"
+    }
+  ]
+```
+
+The commands are specified by name, and should use the non-localized (English) name in order to work on localized installs of Visual Studio. You can test and discover command names in the Visual Studio Command Window.
+
+If you want to pass a single argument, you can specify it as a string like in the previous example.
+
+If you don't need to pass an argument, you can leave it an empty string or omit it from the JSON:
+
+```
+  "_visual_studio_post_cmds": [
+    {
+      "name": "View.WebBrowser"
+    }
+  ]
+```
+
+For more than one argument, you'll need to use an array. For switches, you'll need to split the switch and its value in 2 separate arguments in order to ensure proper quoting. For example:
+
+```
+  "_visual_studio_post_cmds": [
+    {
+      "name": "File.OpenFile",
+      "args": [
+        "{{cookiecutter._output_folder_path}}\\read me.txt",
+        "/e:",
+        "Source Code (text) Editor"
+      ]
+    }
+  ]
+```
+
+Arguments can refer to other Cookiecutter variables. In the examples above, the internal `_output_folder_path` variable is used to form an absolute path to generated files.
+
+Note that the `Python.InstallProjectRequirements` command will only work when adding files to an existing project. That's because it is processed by the Python project in Solution Explorer, and there's no project to receive the message while in Solution Explorer - Folder View. This is a limitation we hope to address in a future release (better Folder View support in general).
 
 ## Troubleshooting
 
