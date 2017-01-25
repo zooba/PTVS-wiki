@@ -106,6 +106,7 @@ This script by default installs a recent version of Python from [nuget](https://
 You can freely modify the `ConfigureCloudService.ps1` script in your project, or add alternate startup tasks to your cloud definition.
 
 Finally, worker roles will execute `LaunchWorker.ps1`, which will start running your Python script, while web roles will initialize IIS and begin handling web requests.
+You can freely modify the `LaunchWorker.ps1` script to change initial behavior, or add command-line arguments and environment variables to your cloud definition.
 
 ![Publish a Cloud Project](Images/PublishCloudProject.png)
 
@@ -117,7 +118,7 @@ These should be specified in a file named `requirements.txt` (customizable by mo
 The file is executed with `pip install -r requirements.txt` as part of initialization.
 
 Note that Cloud Service instances do not include C compilers, so all libraries with C extensions must provide precompiled binaries.
-`pip` and its dependencies, as well as the packages in `requirements.txt`, will be downloaded automatically and may count as changeable bandwidth usage.
+pip and its dependencies, as well as the packages in `requirements.txt`, will be downloaded automatically and may count as chargeable bandwidth usage.
 See [managing required packages](Python-Environments#managing-required-packages) for more information on managing `requirements.txt` files, including how to avoid bandwidth charges or compiler issues on the server.
 
 Troubleshooting

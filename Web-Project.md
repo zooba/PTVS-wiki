@@ -31,9 +31,10 @@ When you create one of these projects, one or more external packages are require
 This dialog will appear to help you install these packages using pip.
 We recommend using a [virtual environment](Python-Environments#virtual-environments) for web projects, as this will ensure that the correct dependencies are included when you publish your web site.
 
-When deploying to Microsoft Azure, using a virtual environment based on 32-bit Python 2.7 or 3.4 is required to ensure the deployed app has the same libraries as when run locally.
-Microsoft Azure Web Sites **do not** support installing packages from a `requirements.txt` file or selecting an alternate Python version when deploying from Visual Studio.
-However, Microsoft Azure Cloud Service does support the `requirements.txt` file.
+When deploying to Microsoft Azure App Service, you will need select a version of Python as a [site extension](https://aka.ms/PythonOnAppService) and manually install packages.
+Azure App Service **does not** automatically install packages from a `requirements.txt` file when deployed from Visual Studio.
+The page at [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService) explains how to configure your web site.
+Microsoft Azure Cloud Service does support the `requirements.txt` file.
 See the [Cloud Project](Cloud-Project) documentation for more information on publishing to Cloud Service.
 
 ![Requirements.txt wizard](Images/RequirementsTxtWizard.png)
