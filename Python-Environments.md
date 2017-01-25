@@ -147,19 +147,13 @@ Managing Required Packages
 --------------------------
 
 If you are sharing your project with others or planning to [publish it to Microsoft Azure](Cloud-Project), you will need to specify the external packages it requires.
-The simplest way to do this is to include an entire virtual environment with your project.
-As long as every user has the same base interpreter installed in the same path as the machine where the virtual environment was created, this will largely work fine.
+The recommended approach is to use a [requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) file.
 
-(This restriction is due to how virtual environments are implemented.
-In general the base interpreter must be installed at the same location on each machine and the virtual environment should be located at the same path.
-PTVS includes some transparent workarounds for virtual environments that have been moved or published to Microsoft Azure, which is why some tasks will succeed through the IDE but fail at the command line.)
-
-An alternative approach is to use a [requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) file.
 This file contains a list of commands for pip that will install the required versions of dependent packages.
-Any filename may be used, and specifying `-r "<full path to file>"` in the Install Python Package dialog will install it.
+Any filename may be used, and specifying `-r "<full path to file>"` in the Install Package tool will install it.
 However, for files named `requirements.txt` in the root directory of the project, there is specific support in the IDE.
 
-The 'Install from requirements.txt' command will use pip to install the packages listed in the requirements.txt file.
+The 'Install from requirements.txt' command appears on environments and uses pip to install the packages listed in the requirements.txt file.
 When you have installed all the packages required, you can use 'Generate requirements.txt' to update the file.
 If it already exists, the dialog below will allow you to select how to update the contents of the file.
 
